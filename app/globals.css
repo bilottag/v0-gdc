@@ -3,6 +3,38 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: 'Candara';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Candara.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Candara';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Candara_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Candara';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Candara_Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Candara';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Candara_Bold_Italic.ttf') format('truetype');
+}
+
 :root {
   --font-heading: 'Candara', 'Segoe UI', system-ui, sans-serif;
   --font-body: 'Corbel', 'Segoe UI', system-ui, sans-serif;
