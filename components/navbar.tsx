@@ -60,9 +60,7 @@ export default function Navbar() {
           <img 
             src="/images/logo.png" 
             alt="Giuliana Design Co." 
-            className={`h-12 md:h-16 w-auto transition-all duration-300 ${
-              scrolled ? '' : 'brightness-0 invert'
-            }`}
+            className="h-12 md:h-16 w-auto"
           />
         </button>
 
