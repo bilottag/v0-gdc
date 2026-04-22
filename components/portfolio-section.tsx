@@ -113,7 +113,7 @@ export default function PortfolioSection() {
       </div>
 
       {/* Gallery header with navigation */}
-      <div className="px-6 md:px-[8vw] mb-8 flex items-center justify-between">
+      <div className="px-6 md:px-[4vw] mb-8 flex items-center justify-between">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
