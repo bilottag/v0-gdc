@@ -100,35 +100,12 @@ export default function PortfolioSection() {
         className="overflow-x-auto horizontal-scroll"
       >
         <div className="flex gap-6 px-6 md:px-[8vw] pb-8" style={{ width: 'max-content' }}>
-          {/* Before/After transformation */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="w-[85vw] md:w-[55vw] flex-shrink-0"
-          >
-            <BeforeAfterSlider
-              beforeImg={BEFORE_IMG}
-              afterImg={AFTER_IMG}
-              beforeAlt="Dated living room before staging"
-              afterAlt="Beautifully staged living room after transformation"
-            />
-            <div className="mt-4 flex justify-between items-end">
-              <div>
-                <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
-                <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
-              </div>
-              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
-            </div>
-          </motion.div>
-
           {/* Kitchen panorama */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.8 }}
             className="w-[85vw] md:w-[50vw] flex-shrink-0"
           >
             <div className="aspect-[16/9] overflow-hidden">
@@ -149,7 +126,7 @@ export default function PortfolioSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="w-[60vw] md:w-[28vw] flex-shrink-0 self-end"
           >
             <div className="aspect-square overflow-hidden">
@@ -170,7 +147,7 @@ export default function PortfolioSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="w-[85vw] md:w-[42vw] flex-shrink-0"
           >
             <div className="aspect-[3/2] overflow-hidden">
@@ -191,7 +168,7 @@ export default function PortfolioSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             className="w-[70vw] md:w-[30vw] flex-shrink-0 self-start mt-12"
           >
             <div className="aspect-[4/5] overflow-hidden">
@@ -204,6 +181,29 @@ export default function PortfolioSection() {
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">The Stone Retreat</p>
               <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Bathroom</p>
+            </div>
+          </motion.div>
+
+          {/* Before/After transformation */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="w-[85vw] md:w-[55vw] flex-shrink-0"
+          >
+            <BeforeAfterSlider
+              beforeImg={BEFORE_IMG}
+              afterImg={AFTER_IMG}
+              beforeAlt="Dated living room before staging"
+              afterAlt="Beautifully staged living room after transformation"
+            />
+            <div className="mt-4 flex justify-between items-end">
+              <div>
+                <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
+                <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+              </div>
+              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
             </div>
           </motion.div>
 
