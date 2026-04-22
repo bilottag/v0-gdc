@@ -38,7 +38,7 @@ export default function Navbar() {
       }`}
     >
       <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
-        scrolled ? 'py-4' : 'py-8'
+        scrolled ? 'py-8' : 'py-16'
       }`}>
         {/* Left nav links */}
         <div className="hidden md:flex items-center gap-10">
