@@ -54,43 +54,79 @@ export default function PortfolioSection() {
         >
           The Spatial Chronicle
         </motion.p>
-        <div className="flex items-end justify-between">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-serif text-4xl md:text-6xl font-light text-foreground"
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-serif text-4xl md:text-6xl font-light text-foreground"
+        >
+          Selected Works
+        </motion.h2>
+      </div>
+
+      {/* Before/After transformation - Featured */}
+      <div className="px-6 md:px-[8vw] mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-5xl"
+        >
+          <BeforeAfterSlider
+            beforeImg={BEFORE_IMG}
+            afterImg={AFTER_IMG}
+            beforeAlt="Dated living room before staging"
+            afterAlt="Beautifully staged living room after transformation"
+          />
+          <div className="mt-4 flex justify-between items-end">
+            <div>
+              <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+            </div>
+            <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Gallery header with navigation */}
+      <div className="px-6 md:px-[8vw] mb-8 flex items-center justify-between">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="font-serif text-2xl md:text-3xl font-light text-foreground"
+        >
+          More Projects
+        </motion.p>
+        
+        {/* Navigation arrows */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="flex gap-3"
+        >
+          <button
+            onClick={() => scroll('left')}
+            disabled={!canScrollLeft}
+            className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
+            aria-label="Scroll left"
           >
-            Selected Works
-          </motion.h2>
-          
-          {/* Navigation arrows */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex gap-3"
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => scroll('right')}
+            disabled={!canScrollRight}
+            className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
+            aria-label="Scroll right"
           >
-            <button
-              onClick={() => scroll('left')}
-              disabled={!canScrollLeft}
-              className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
-              aria-label="Scroll left"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => scroll('right')}
-              disabled={!canScrollRight}
-              className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
-              aria-label="Scroll right"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </motion.div>
-        </div>
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </motion.div>
       </div>
 
       {/* Horizontal scroll gallery */}
@@ -181,29 +217,6 @@ export default function PortfolioSection() {
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">The Stone Retreat</p>
               <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Bathroom</p>
-            </div>
-          </motion.div>
-
-          {/* Before/After transformation */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="w-[85vw] md:w-[55vw] flex-shrink-0"
-          >
-            <BeforeAfterSlider
-              beforeImg={BEFORE_IMG}
-              afterImg={AFTER_IMG}
-              beforeAlt="Dated living room before staging"
-              afterAlt="Beautifully staged living room after transformation"
-            />
-            <div className="mt-4 flex justify-between items-end">
-              <div>
-                <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
-                <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
-              </div>
-              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
             </div>
           </motion.div>
 
