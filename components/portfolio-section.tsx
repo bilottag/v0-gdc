@@ -66,8 +66,8 @@ export default function PortfolioSection() {
       </div>
 
       {/* Before/After transformation - Featured */}
-      <div className="px-6 md:px-[8vw] mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="px-6 md:px-[4vw] mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
