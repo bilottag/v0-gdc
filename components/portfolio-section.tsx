@@ -44,7 +44,7 @@ export default function PortfolioSection() {
   return (
     <section id="portfolio" className="relative py-24 md:py-32 bg-section-neutral">
       {/* Section header */}
-      <div className="px-6 md:px-[8vw] mb-16">
+      <div className="px-6 md:px-[4vw] mb-16">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
