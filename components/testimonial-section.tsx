@@ -22,7 +22,7 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="relative py-24 md:py-32 px-6 md:px-[8vw] border-t border-border">
+    <section className="relative py-24 md:py-32 px-6 md:px-[8vw] bg-section-cool">
       <div className="max-w-6xl mx-auto">
         <motion.p
           initial={{ opacity: 0, y: 20 }}

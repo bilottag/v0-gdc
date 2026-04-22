@@ -42,7 +42,7 @@ export default function PortfolioSection() {
   }
 
   return (
-    <section id="portfolio" className="relative py-24 md:py-32">
+    <section id="portfolio" className="relative py-24 md:py-32 bg-section-neutral">
       {/* Section header */}
       <div className="px-6 md:px-[8vw] mb-16">
         <motion.p

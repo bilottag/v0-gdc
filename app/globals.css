@@ -29,6 +29,12 @@
   --muted-foreground: oklch(0.50 0.02 60);
   --accent: oklch(0.94 0.01 60);
   --accent-foreground: oklch(0.18 0.01 60);
+  
+  /* Section backgrounds - muted variations */
+  --section-warm: oklch(0.96 0.008 50);
+  --section-neutral: oklch(0.95 0.005 60);
+  --section-cool: oklch(0.96 0.006 70);
+  --section-cream: oklch(0.97 0.01 55);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: oklch(0.88 0.01 60);
@@ -103,6 +109,10 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-section-warm: var(--section-warm);
+  --color-section-neutral: var(--section-neutral);
+  --color-section-cool: var(--section-cool);
+  --color-section-cream: var(--section-cream);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
