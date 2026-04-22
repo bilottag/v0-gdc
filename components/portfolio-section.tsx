@@ -44,13 +44,13 @@ export default function PortfolioSection() {
   return (
     <section id="portfolio" className="relative py-24 md:py-32 bg-section-neutral">
       {/* Section header */}
-      <div className="px-6 md:px-[8vw] mb-16">
+      <div className="px-6 md:px-[4vw] mb-16">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4"
+          className="font-sans text-lg font-bold tracking-[0.4em] uppercase text-muted-foreground mb-4"
         >
           The Spatial Chronicle
         </motion.p>
@@ -66,32 +66,54 @@ export default function PortfolioSection() {
       </div>
 
       {/* Before/After transformation - Featured */}
-      <div className="px-6 md:px-[8vw] mb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-5xl"
-        >
-          <BeforeAfterSlider
-            beforeImg={BEFORE_IMG}
-            afterImg={AFTER_IMG}
-            beforeAlt="Dated living room before staging"
-            afterAlt="Beautifully staged living room after transformation"
-          />
-          <div className="mt-4 flex justify-between items-end">
-            <div>
-              <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+      <div className="px-6 md:px-[4vw] mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <BeforeAfterSlider
+              beforeImg={BEFORE_IMG}
+              afterImg={AFTER_IMG}
+              beforeAlt="Dated living room before staging"
+              afterAlt="Beautifully staged living room after transformation"
+            />
+            <div className="mt-4 flex justify-between items-end">
+              <div>
+                <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
+                <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+              </div>
+              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
             </div>
-            <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
-          </div>
-        </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <BeforeAfterSlider
+              beforeImg={KITCHEN_IMG}
+              afterImg={DINING_IMG}
+              beforeAlt="Kitchen before renovation"
+              afterAlt="Kitchen after renovation"
+            />
+            <div className="mt-4 flex justify-between items-end">
+              <div>
+                <p className="font-serif text-xl text-foreground">The Harper Kitchen</p>
+                <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Kitchen</p>
+              </div>
+              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       {/* Gallery header with navigation */}
-      <div className="px-6 md:px-[8vw] mb-8 flex items-center justify-between">
+      <div className="px-6 md:px-[4vw] mb-8 flex items-center justify-between">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

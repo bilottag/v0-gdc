@@ -34,11 +34,11 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-background/80 backdrop-blur-xl border-b border-border/50'
-          : 'bg-transparent'
+          : 'bg-black/30 backdrop-blur-sm'
       }`}
     >
       <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
-        scrolled ? 'py-12' : 'py-16'
+        scrolled ? 'py-12' : 'py-32'
       }`}>
         {/* Left nav links */}
         <div className="hidden md:flex items-center gap-10">
@@ -46,7 +46,7 @@ export default function Navbar() {
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className={`font-sans text-sm tracking-widest uppercase transition-colors duration-300 ${
+              className={`font-sans text-base font-semibold tracking-widest uppercase transition-colors duration-300 ${
                 scrolled ? 'text-muted-foreground hover:text-foreground' : 'text-white/70 hover:text-white'
               }`}
             >
@@ -59,11 +59,11 @@ export default function Navbar() {
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
           className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 ${
-            scrolled ? 'top-1/2 -translate-y-1/2' : '-top-2'
+            scrolled ? 'top-1/2 -translate-y-1/2' : 'top-1/2 -translate-y-1/2'
           }`}
         >
           <Image 
-            src="/images/logo.png" 
+            src="/images/logo.png"
             alt="Giuliana Design Co." 
             width={256}
             height={256}
@@ -78,7 +78,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10">
           <button
             onClick={() => scrollTo('contact')}
-            className={`font-sans text-sm tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
+            className={`font-sans text-base font-semibold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
               scrolled 
                 ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
                 : 'border-white/50 text-white hover:bg-white hover:text-foreground'

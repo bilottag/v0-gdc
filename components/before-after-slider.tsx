@@ -71,12 +71,20 @@ export default function BeforeAfterSlider({ beforeImg, afterImg, beforeAlt, afte
       </div>
 
       {/* Labels */}
-      <div className="absolute top-4 left-4 z-20">
+      <div 
+        className={`absolute top-4 left-4 z-20 transition-opacity duration-300 ${
+          position <= 5 ? 'opacity-0' : 'opacity-100'
+        }`}
+      >
         <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-white bg-foreground/50 backdrop-blur-sm px-3 py-1.5">
           Before
         </span>
       </div>
-      <div className="absolute top-4 right-4 z-20">
+      <div 
+        className={`absolute top-4 right-4 z-20 transition-opacity duration-300 ${
+          position >= 95 ? 'opacity-0' : 'opacity-100'
+        }`}
+      >
         <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-white bg-foreground/50 backdrop-blur-sm px-3 py-1.5">
           After
         </span>
