@@ -38,7 +38,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-16 pb-24 md:pb-32">
             <motion.p
-              className="font-serif text-xs tracking-[0.35em] uppercase text-white/70 mb-4"
+              className="font-serif text-lg font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
               Home Staging
@@ -47,9 +47,9 @@ export default function DualityHero() {
               className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-none"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
-              <span className="font-bold">Sell the</span>
+              <span className="font-medium">Sell the</span>
               <br />
-              <span className="italic font-normal">Dream</span>
+              <span className="italic font-thin">Dream</span>
             </motion.h2>
             <motion.div
               className="mt-8 overflow-hidden"
@@ -89,7 +89,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
             <motion.p
-              className="font-serif text-xs tracking-[0.35em] uppercase text-white/70 mb-4"
+              className="font-serif text-lg font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
             >
               Interior Design
@@ -98,7 +98,7 @@ export default function DualityHero() {
               className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-none"
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
             >
-              <span className="font-bold">Live the</span>
+              <span className="font-medium">Live the</span>
               <br />
               <span className="italic font-normal">Reality</span>
             </motion.h2>

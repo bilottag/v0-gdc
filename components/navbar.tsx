@@ -46,7 +46,7 @@ export default function Navbar() {
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className={`font-sans text-sm tracking-widest uppercase transition-colors duration-300 ${
+              className={`font-sans text-base font-semibold tracking-widest uppercase transition-colors duration-300 ${
                 scrolled ? 'text-muted-foreground hover:text-foreground' : 'text-white/70 hover:text-white'
               }`}
             >
@@ -78,7 +78,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10">
           <button
             onClick={() => scrollTo('contact')}
-            className={`font-sans text-sm tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
+            className={`font-sans text-base font-semibold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
               scrolled 
                 ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
                 : 'border-white/50 text-white hover:bg-white hover:text-foreground'
