@@ -57,11 +57,13 @@ export default function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
           className="absolute left-1/2 -translate-x-1/2"
         >
-          <span className={`font-serif text-2xl md:text-3xl tracking-wide transition-colors duration-300 ${
-            scrolled ? 'text-foreground' : 'text-white'
-          }`}>
-            Giuliana
-          </span>
+          <img 
+            src="/images/logo.png" 
+            alt="Giuliana Design Co." 
+            className={`h-12 md:h-16 w-auto transition-all duration-300 ${
+              scrolled ? '' : 'brightness-0 invert'
+            }`}
+          />
         </button>
 
         {/* Right nav links */}
