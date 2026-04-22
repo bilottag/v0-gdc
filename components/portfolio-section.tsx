@@ -1,6 +1,8 @@
 "use client"
 
+import { useRef, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import BeforeAfterSlider from './before-after-slider'
 
 const BEFORE_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/fcf9a41b0_generated_0abbced9.png'
@@ -11,6 +13,34 @@ const DINING_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6
 const BATHROOM_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/9404fc9fa_generated_daee69a4.png'
 
 export default function PortfolioSection() {
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const [canScrollLeft, setCanScrollLeft] = useState(false)
+  const [canScrollRight, setCanScrollRight] = useState(true)
+
+  const checkScrollability = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current
+      setCanScrollLeft(scrollLeft > 0)
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10)
+    }
+  }
+
+  useEffect(() => {
+    checkScrollability()
+    window.addEventListener('resize', checkScrollability)
+    return () => window.removeEventListener('resize', checkScrollability)
+  }, [])
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = scrollRef.current.clientWidth * 0.6
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <section id="portfolio" className="relative py-24 md:py-32">
       {/* Section header */}
@@ -24,19 +54,51 @@ export default function PortfolioSection() {
         >
           The Spatial Chronicle
         </motion.p>
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-serif text-4xl md:text-6xl font-light text-foreground"
-        >
-          Selected Works
-        </motion.h2>
+        <div className="flex items-end justify-between">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="font-serif text-4xl md:text-6xl font-light text-foreground"
+          >
+            Selected Works
+          </motion.h2>
+          
+          {/* Navigation arrows */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex gap-3"
+          >
+            <button
+              onClick={() => scroll('left')}
+              disabled={!canScrollLeft}
+              className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
+              aria-label="Scroll left"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              onClick={() => scroll('right')}
+              disabled={!canScrollRight}
+              className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
+              aria-label="Scroll right"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </motion.div>
+        </div>
       </div>
 
       {/* Horizontal scroll gallery */}
-      <div className="overflow-x-auto horizontal-scroll">
+      <div 
+        ref={scrollRef}
+        onScroll={checkScrollability}
+        className="overflow-x-auto horizontal-scroll"
+      >
         <div className="flex gap-6 px-6 md:px-[8vw] pb-8" style={{ width: 'max-content' }}>
           {/* Before/After transformation */}
           <motion.div
