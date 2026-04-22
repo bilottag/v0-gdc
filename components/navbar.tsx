@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -36,7 +37,7 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="flex items-center justify-between px-6 md:px-12 py-6 relative overflow-visible">
+      <div className="flex items-center justify-between px-6 md:px-12 py-8 relative overflow-visible">
         {/* Left nav links */}
         <div className="hidden md:flex items-center gap-10">
           {links.map((link) => (
@@ -55,13 +56,15 @@ export default function Navbar() {
         {/* Centered logo */}
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
-          className="absolute left-1/2 -translate-x-1/2 top-2"
+          className="absolute left-1/2 -translate-x-1/2 -top-2"
         >
-          <img 
+          <Image 
             src="/images/logo.png" 
             alt="Giuliana Design Co." 
-            className="h-24 md:h-32 w-auto object-contain"
-            style={{ imageRendering: 'auto' }}
+            width={256}
+            height={256}
+            className="w-48 md:w-64 h-auto"
+            priority
           />
         </button>
 
