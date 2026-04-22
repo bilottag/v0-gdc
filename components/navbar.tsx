@@ -63,7 +63,7 @@ export default function Navbar() {
           }`}
         >
           <Image 
-            src={scrolled ? "/images/logo.png" : "/images/logo-white.png"}
+            src="/images/logo.png"
             alt="Giuliana Design Co." 
             width={256}
             height={256}
