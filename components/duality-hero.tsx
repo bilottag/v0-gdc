@@ -44,12 +44,12 @@ export default function DualityHero() {
               Home Staging
             </motion.p>
             <motion.h2
-              className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-white leading-none"
+              className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-none"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
-              Sell the
+              <span className="font-bold">Sell the</span>
               <br />
-              <em className="italic">Dream</em>
+              <span className="italic font-normal">Dream</span>
             </motion.h2>
             <motion.div
               className="mt-8 overflow-hidden"
@@ -95,12 +95,12 @@ export default function DualityHero() {
               Interior Design
             </motion.p>
             <motion.h2
-              className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-white leading-none"
+              className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-none"
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
             >
-              Live the
+              <span className="font-bold">Live the</span>
               <br />
-              <em className="italic">Reality</em>
+              <span className="italic font-normal">Reality</span>
             </motion.h2>
             <motion.div
               className="mt-8 overflow-hidden flex justify-end"
