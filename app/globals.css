@@ -4,16 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  font-family: 'Cormorant Garamond';
+  font-family: 'Candara';
   font-style: normal;
-  font-weight: 300 700;
+  font-weight: 400;
   font-display: swap;
-  src: url('https://fonts.gstatic.com/s/cormorantgaramond/v16/co3bmX5slCNuHLi8bLeY9MK7whWMhyjQAllvuQWJ5heb_w.woff2') format('woff2');
+  src: url('/fonts/Candara.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Candara';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Candara_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Candara';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Candara_Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Candara';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Candara_Bold_Italic.ttf') format('truetype');
 }
 
 :root {
-  --font-heading: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Geist', system-ui, sans-serif;
+  --font-heading: 'Candara', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Corbel', 'Segoe UI', system-ui, sans-serif;
   
   --background: oklch(0.98 0.002 60);
   --foreground: oklch(0.18 0.01 60);

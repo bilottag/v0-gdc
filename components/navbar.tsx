@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -36,7 +37,9 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="flex items-center justify-between px-6 md:px-12 py-4 relative">
+      <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
+        scrolled ? 'py-12' : 'py-16'
+      }`}>
         {/* Left nav links */}
         <div className="hidden md:flex items-center gap-10">
           {links.map((link) => (
@@ -55,13 +58,20 @@ export default function Navbar() {
         {/* Centered logo */}
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
-          className="absolute left-1/2 -translate-x-1/2"
+          className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 ${
+            scrolled ? 'top-1/2 -translate-y-1/2' : '-top-2'
+          }`}
         >
-          <span className={`font-serif text-2xl md:text-3xl tracking-wide transition-colors duration-300 ${
-            scrolled ? 'text-foreground' : 'text-white'
-          }`}>
-            Giuliana
-          </span>
+          <Image 
+            src="/images/logo.png" 
+            alt="Giuliana Design Co." 
+            width={256}
+            height={256}
+            className={`h-auto transition-all duration-500 ${
+              scrolled ? 'w-24 md:w-32' : 'w-48 md:w-64'
+            }`}
+            priority
+          />
         </button>
 
         {/* Right nav links */}
