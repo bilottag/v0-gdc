@@ -38,7 +38,7 @@ export default function Navbar() {
       }`}
     >
       <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
-        scrolled ? 'py-8' : 'py-16'
+        scrolled ? 'py-12' : 'py-16'
       }`}>
         {/* Left nav links */}
         <div className="hidden md:flex items-center gap-10">
@@ -59,7 +59,7 @@ export default function Navbar() {
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
           className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 ${
-            scrolled ? 'top-1' : '-top-2'
+            scrolled ? 'top-1/2 -translate-y-1/2' : '-top-2'
           }`}
         >
           <Image 
