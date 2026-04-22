@@ -211,6 +211,28 @@ export default function PortfolioSection() {
           <div className="w-[8vw] flex-shrink-0" />
         </div>
       </div>
+
+      {/* Bottom navigation arrows */}
+      <div className="px-6 md:px-[8vw] mt-8 flex justify-center">
+        <div className="flex gap-3">
+          <button
+            onClick={() => scroll('left')}
+            disabled={!canScrollLeft}
+            className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => scroll('right')}
+            disabled={!canScrollRight}
+            className="w-12 h-12 rounded-full border border-foreground/20 flex items-center justify-center transition-all duration-300 hover:bg-foreground hover:text-background disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-foreground"
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
     </section>
   )
 }
