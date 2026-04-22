@@ -31,10 +31,10 @@
   --accent-foreground: oklch(0.18 0.01 60);
   
   /* Section backgrounds - muted variations */
-  --section-warm: oklch(0.96 0.008 50);
-  --section-neutral: oklch(0.95 0.005 60);
-  --section-cool: oklch(0.96 0.006 70);
-  --section-cream: oklch(0.97 0.01 55);
+  --section-warm: oklch(0.92 0.015 50);
+  --section-neutral: oklch(0.90 0.012 60);
+  --section-cool: oklch(0.91 0.014 70);
+  --section-cream: oklch(0.93 0.018 55);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: oklch(0.88 0.01 60);
