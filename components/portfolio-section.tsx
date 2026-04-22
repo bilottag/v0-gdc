@@ -67,27 +67,49 @@ export default function PortfolioSection() {
 
       {/* Before/After transformation - Featured */}
       <div className="px-6 md:px-[8vw] mb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-5xl"
-        >
-          <BeforeAfterSlider
-            beforeImg={BEFORE_IMG}
-            afterImg={AFTER_IMG}
-            beforeAlt="Dated living room before staging"
-            afterAlt="Beautifully staged living room after transformation"
-          />
-          <div className="mt-4 flex justify-between items-end">
-            <div>
-              <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <BeforeAfterSlider
+              beforeImg={BEFORE_IMG}
+              afterImg={AFTER_IMG}
+              beforeAlt="Dated living room before staging"
+              afterAlt="Beautifully staged living room after transformation"
+            />
+            <div className="mt-4 flex justify-between items-end">
+              <div>
+                <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
+                <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+              </div>
+              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
             </div>
-            <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
-          </div>
-        </motion.div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <BeforeAfterSlider
+              beforeImg={KITCHEN_IMG}
+              afterImg={DINING_IMG}
+              beforeAlt="Kitchen before renovation"
+              afterAlt="Kitchen after renovation"
+            />
+            <div className="mt-4 flex justify-between items-end">
+              <div>
+                <p className="font-serif text-xl text-foreground">The Harper Kitchen</p>
+                <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Kitchen</p>
+              </div>
+              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       {/* Gallery header with navigation */}
