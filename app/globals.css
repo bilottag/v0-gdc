@@ -170,6 +170,12 @@
   }
 }
 
+/* Candara Bold utility class for section titles */
+.font-candara-bold {
+  font-family: 'Candara', 'Segoe UI', system-ui, sans-serif;
+  font-weight: 700;
+}
+
 /* Custom scrollbar for horizontal scroll */
 .horizontal-scroll::-webkit-scrollbar {
   height: 2px;
