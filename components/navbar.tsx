@@ -34,10 +34,10 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-background/80 backdrop-blur-xl border-b border-border/50'
-          : 'bg-white/20 backdrop-blur-[3px]'
+          : 'bg-white/40 backdrop-blur-[3px]'
       }`}
     >
-      <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
+      <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 text-lg ${
         scrolled ? 'py-12' : 'py-24'
       }`}>
         {/* Left nav links */}
@@ -46,7 +46,7 @@ export default function Navbar() {
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className={`font-sans text-base font-semibold tracking-widest uppercase transition-colors duration-300 ${
+              className={`font-sans text-lg font-semibold tracking-widest uppercase transition-colors duration-300 ${
                 scrolled ? 'text-muted-foreground hover:text-foreground' : 'text-white/70 hover:text-white'
               }`}
             >
@@ -78,7 +78,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10">
           <button
             onClick={() => scrollTo('contact')}
-            className={`font-sans text-base font-semibold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
+            className={`font-sans text-lg font-semibold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
               scrolled 
                 ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground'
                 : 'border-white/50 text-white hover:bg-white hover:text-foreground'
