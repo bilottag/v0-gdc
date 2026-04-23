@@ -37,7 +37,7 @@
 
 :root {
   --font-heading: 'Candara', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Corbel', 'Segoe UI', system-ui, sans-serif;
+  --font-body: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   
   --background: oklch(0.98 0.002 60);
   --foreground: oklch(0.18 0.01 60);
