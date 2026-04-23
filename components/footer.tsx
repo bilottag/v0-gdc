@@ -77,7 +77,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
             className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
-            style={{ marginBottom: '-3vw' }}
+            style={{ marginBottom: '-4vw' }}
           >
             GDC
           </motion.p>
