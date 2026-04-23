@@ -46,7 +46,7 @@ export default function Navbar() {
             <button
               key={link.id}
               onClick={() => scrollTo(link.id)}
-              className={`font-sans text-base font-semibold tracking-widest uppercase transition-colors duration-300 ${
+              className={`font-sans text-lg font-semibold tracking-widest uppercase transition-colors duration-300 ${
                 scrolled ? 'text-muted-foreground hover:text-foreground' : 'text-white/70 hover:text-white'
               }`}
             >
