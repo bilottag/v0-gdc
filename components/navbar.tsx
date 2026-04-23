@@ -34,11 +34,11 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-background/80 backdrop-blur-xl border-b border-border/50'
-          : 'bg-black/30 backdrop-blur-sm'
+          : 'bg-white/10 backdrop-blur-[2px]'
       }`}
     >
       <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
-        scrolled ? 'py-12' : 'py-32'
+        scrolled ? 'py-12' : 'py-16'
       }`}>
         {/* Left nav links */}
         <div className="hidden md:flex items-center gap-10">
