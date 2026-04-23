@@ -29,7 +29,7 @@ export default function TestimonialSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-candara-bold text-lg tracking-[0.4em] uppercase text-muted-foreground mb-16 text-center"
+          className="font-candara text-lg tracking-[0.4em] uppercase text-muted-foreground mb-16 text-center"
         >
           Words from Our Clients
         </motion.p>
