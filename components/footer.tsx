@@ -49,22 +49,22 @@ export default function Footer() {
           {/* Contact details */}
           <div className="space-y-3">
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Contact</p>
-            <p className="font-sans text-sm text-background/70">hello@giulianadesignco.com</p>
-            <p className="font-sans text-sm text-background/70">(555) 821-4300</p>
+            <p className="font-sans text-sm text-background/70">GiulianaDesignCo@gmail.com</p>
+            <p className="font-sans text-sm text-background/70">(519) 859-0318</p>
           </div>
 
           <div className="space-y-3">
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Location</p>
-            <p className="font-sans text-sm text-background/70">Austin, Texas</p>
-            <p className="font-sans text-sm text-background/70">Serving Central Texas & Beyond</p>
+            <p className="font-sans text-sm text-background/70">London, Ontario</p>
+            <p className="font-sans text-sm text-background/70">Serving South Western Ontario</p>
           </div>
 
           <div className="space-y-3 md:text-right">
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Follow</p>
             <div className="flex gap-6 md:justify-end">
               <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Instagram</a>
-              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Pinterest</a>
-              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Houzz</a>
+              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Facebook</a>
+              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">LinkedIn</a>
             </div>
           </div>
         </div>
