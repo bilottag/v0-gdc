@@ -1,8 +1,8 @@
 "use client"
 
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import BeforeAfterSlider from './before-after-slider'
 
 const BEFORE_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/fcf9a41b0_generated_0abbced9.png'
@@ -12,10 +12,23 @@ const TEXTURE_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef
 const DINING_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/fb421a4d8_generated_e204a7af.png'
 const BATHROOM_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/9404fc9fa_generated_daee69a4.png'
 
+// Additional project images
+const LIVING_ROOM_IMG = 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80'
+const BEDROOM_IMG = 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1200&q=80'
+const OFFICE_IMG = 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80'
+const PATIO_IMG = 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80'
+const ENTRYWAY_IMG = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80'
+
+const AUTOSCROLL_INTERVAL = 4000 // 4 seconds between scrolls
+const SCROLL_AMOUNT_PERCENT = 0.3 // Scroll 30% of container width
+
 export default function PortfolioSection() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true)
+  const [isPaused, setIsPaused] = useState(false)
+  const autoScrollIntervalRef = useRef<NodeJS.Timeout | null>(null)
 
   const checkScrollability = () => {
     if (scrollRef.current) {
@@ -25,11 +38,64 @@ export default function PortfolioSection() {
     }
   }
 
+  const autoScroll = useCallback(() => {
+    if (scrollRef.current && !isPaused) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current
+      const isAtEnd = scrollLeft >= scrollWidth - clientWidth - 10
+      
+      if (isAtEnd) {
+        // Reset to beginning smoothly
+        scrollRef.current.scrollTo({
+          left: 0,
+          behavior: 'smooth'
+        })
+      } else {
+        // Scroll forward
+        const scrollAmount = scrollRef.current.clientWidth * SCROLL_AMOUNT_PERCENT
+        scrollRef.current.scrollBy({
+          left: scrollAmount,
+          behavior: 'smooth'
+        })
+      }
+    }
+  }, [isPaused])
+
   useEffect(() => {
     checkScrollability()
     window.addEventListener('resize', checkScrollability)
     return () => window.removeEventListener('resize', checkScrollability)
   }, [])
+
+  // Autoscroll effect
+  useEffect(() => {
+    if (isAutoScrolling && !isPaused) {
+      autoScrollIntervalRef.current = setInterval(autoScroll, AUTOSCROLL_INTERVAL)
+    }
+    
+    return () => {
+      if (autoScrollIntervalRef.current) {
+        clearInterval(autoScrollIntervalRef.current)
+      }
+    }
+  }, [isAutoScrolling, isPaused, autoScroll])
+
+  // Pause on hover
+  const handleMouseEnter = () => {
+    setIsPaused(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsPaused(false)
+  }
+
+  const toggleAutoScroll = () => {
+    setIsAutoScrolling(!isAutoScrolling)
+    if (isAutoScrolling) {
+      setIsPaused(true)
+    } else {
+      setIsPaused(false)
+    }
+  }
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -124,14 +190,25 @@ export default function PortfolioSection() {
           More Projects
         </motion.p>
         
-        {/* Navigation arrows */}
+        {/* Navigation arrows and autoscroll toggle */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="flex gap-3"
+          className="flex gap-3 items-center"
         >
+          <button
+            onClick={toggleAutoScroll}
+            className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 ${
+              isAutoScrolling 
+                ? 'border-primary bg-primary/10 text-primary hover:bg-primary hover:text-background' 
+                : 'border-foreground/20 hover:bg-foreground hover:text-background'
+            }`}
+            aria-label={isAutoScrolling ? 'Pause autoscroll' : 'Play autoscroll'}
+          >
+            {isAutoScrolling ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+          </button>
           <button
             onClick={() => scroll('left')}
             disabled={!canScrollLeft}
@@ -155,6 +232,8 @@ export default function PortfolioSection() {
       <div 
         ref={scrollRef}
         onScroll={checkScrollability}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         className="overflow-x-auto horizontal-scroll"
       >
         <div className="flex gap-6 px-6 md:px-[8vw] pb-8" style={{ width: 'max-content' }}>
@@ -239,6 +318,111 @@ export default function PortfolioSection() {
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">The Stone Retreat</p>
               <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Bathroom</p>
+            </div>
+          </motion.div>
+
+          {/* Living Room */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="w-[85vw] md:w-[45vw] flex-shrink-0"
+          >
+            <div className="aspect-[16/10] overflow-hidden">
+              <img
+                src={LIVING_ROOM_IMG}
+                alt="Modern living room with natural light and contemporary furniture"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">The Horizon Lounge</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+            </div>
+          </motion.div>
+
+          {/* Bedroom */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="w-[75vw] md:w-[35vw] flex-shrink-0 self-end"
+          >
+            <div className="aspect-[4/3] overflow-hidden">
+              <img
+                src={BEDROOM_IMG}
+                alt="Serene bedroom with minimalist design and soft textiles"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">The Serenity Suite</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Bedroom</p>
+            </div>
+          </motion.div>
+
+          {/* Office */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="w-[80vw] md:w-[40vw] flex-shrink-0 self-start mt-8"
+          >
+            <div className="aspect-[3/2] overflow-hidden">
+              <img
+                src={OFFICE_IMG}
+                alt="Elegant home office with natural wood desk and curated decor"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">The Executive Study</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Office</p>
+            </div>
+          </motion.div>
+
+          {/* Patio */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="w-[70vw] md:w-[32vw] flex-shrink-0"
+          >
+            <div className="aspect-square overflow-hidden">
+              <img
+                src={PATIO_IMG}
+                alt="Luxurious outdoor patio with comfortable seating and greenery"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">The Garden Terrace</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Outdoor</p>
+            </div>
+          </motion.div>
+
+          {/* Entryway */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="w-[65vw] md:w-[28vw] flex-shrink-0 self-end"
+          >
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src={ENTRYWAY_IMG}
+                alt="Grand entryway with statement lighting and elegant finishes"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">The Grand Entry</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Entryway</p>
             </div>
           </motion.div>
 
