@@ -30,7 +30,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-candara text-lg tracking-[0.4em] uppercase text-muted-foreground mb-4"
+          className="font-candara text-2xl tracking-[0.4em] uppercase text-muted-foreground mb-4 font-semibold"
         >
           Our Expertise
         </motion.p>

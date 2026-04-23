@@ -15,7 +15,7 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="font-sans text-xs tracking-[0.4em] uppercase text-background/50 mb-4"
+              className="font-sans text-xl tracking-[0.4em] uppercase text-background/50 mb-4 font-semibold"
             >
               Get in Touch
             </motion.p>
@@ -48,19 +48,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
           {/* Contact details */}
           <div className="space-y-3">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Contact</p>
+            <p className="font-sans text-sm tracking-[0.3em] uppercase text-background/40 mb-3 font-semibold">Contact</p>
             <p className="font-sans text-sm text-background/70">GiulianaDesignCo@gmail.com</p>
             <p className="font-sans text-sm text-background/70">(519) 859-0318</p>
           </div>
 
           <div className="space-y-3">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Location</p>
+            <p className="font-sans text-sm tracking-[0.3em] uppercase text-background/40 mb-3 font-semibold">Location</p>
             <p className="font-sans text-sm text-background/70">London, Ontario</p>
             <p className="font-sans text-sm text-background/70">Serving South Western Ontario</p>
           </div>
 
           <div className="space-y-3 md:text-right">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Follow</p>
+            <p className="font-sans text-sm tracking-[0.3em] uppercase text-background/40 mb-3 font-semibold">Follow</p>
             <div className="flex gap-6 md:justify-end">
               <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Instagram</a>
               <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Facebook</a>
@@ -76,7 +76,7 @@ export default function Footer() {
             whileInView={{ opacity: 0.12, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
+            className="font-serif text-[20vw] md:text-[15vw] font-normal text-white leading-none tracking-tight whitespace-nowrap"
             style={{ marginBottom: '-4vw' }}
           >
             GDC
