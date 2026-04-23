@@ -24,7 +24,7 @@ export default function IntroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-serif text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance"
+          className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance"
         >
           We don&apos;t decorate spaces.
           <br />
