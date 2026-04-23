@@ -264,7 +264,7 @@ export default function PortfolioSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="w-[60vw] md:w-[28vw] flex-shrink-0 self-end"
+            className="w-[60vw] md:w-[28vw] flex-shrink-0"
           >
             <div className="aspect-square overflow-hidden">
               <img
@@ -306,7 +306,7 @@ export default function PortfolioSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="w-[70vw] md:w-[30vw] flex-shrink-0 self-start mt-12"
+            className="w-[70vw] md:w-[30vw] flex-shrink-0"
           >
             <div className="aspect-[4/5] overflow-hidden">
               <img
@@ -348,7 +348,7 @@ export default function PortfolioSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="w-[75vw] md:w-[35vw] flex-shrink-0 self-end"
+            className="w-[75vw] md:w-[35vw] flex-shrink-0"
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
@@ -369,7 +369,7 @@ export default function PortfolioSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-[80vw] md:w-[40vw] flex-shrink-0 self-start mt-8"
+            className="w-[80vw] md:w-[40vw] flex-shrink-0"
           >
             <div className="aspect-[3/2] overflow-hidden">
               <img
@@ -411,7 +411,7 @@ export default function PortfolioSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="w-[65vw] md:w-[28vw] flex-shrink-0 self-end"
+            className="w-[65vw] md:w-[28vw] flex-shrink-0"
           >
             <div className="aspect-[3/4] overflow-hidden">
               <img
