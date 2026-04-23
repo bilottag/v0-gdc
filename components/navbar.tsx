@@ -34,7 +34,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-background/80 backdrop-blur-xl border-b border-border/50'
-          : 'bg-white/20 backdrop-blur-[3px]'
+          : 'bg-white/40 backdrop-blur-[3px]'
       }`}
     >
       <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
@@ -68,7 +68,7 @@ export default function Navbar() {
             width={256}
             height={256}
             className={`h-auto transition-all duration-500 ${
-              scrolled ? 'w-24 md:w-32' : 'w-48 md:w-64 opacity-70 brightness-75'
+              scrolled ? 'w-24 md:w-32' : 'w-48 md:w-64'
             }`}
             priority
           />
