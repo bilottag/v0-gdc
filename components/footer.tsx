@@ -47,21 +47,21 @@ export default function Footer() {
       <div className="border-t border-background/10 px-6 md:px-[8vw] py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Contact details */}
-          <div className="grid grid-rows-[auto_1.5rem_1.5rem] gap-1">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-2">Contact</p>
-            <p className="font-sans text-sm text-background/70 leading-6">hello@giulianadesignco.com</p>
-            <p className="font-sans text-sm text-background/70 leading-6">(555) 821-4300</p>
+          <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3">
+            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Contact</p>
+            <p className="font-sans text-sm text-background/70">hello@giulianadesignco.com</p>
+            <p className="font-sans text-sm text-background/70">(555) 821-4300</p>
           </div>
 
-          <div className="grid grid-rows-[auto_1.5rem_1.5rem] gap-1">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-2">Location</p>
-            <p className="font-sans text-sm text-background/70 leading-6">Austin, Texas</p>
-            <p className="font-sans text-sm text-background/70 leading-6">Serving Central Texas & Beyond</p>
+          <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3">
+            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Location</p>
+            <p className="font-sans text-sm text-background/70">Austin, Texas</p>
+            <p className="font-sans text-sm text-background/70">Serving Central Texas & Beyond</p>
           </div>
 
-          <div className="grid grid-rows-[auto_1.5rem_1.5rem] gap-1 md:text-right">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-2">Follow</p>
-            <div className="flex gap-6 md:justify-end items-center">
+          <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3 md:text-right">
+            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Follow</p>
+            <div className="flex gap-6 md:justify-end">
               <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Instagram</a>
               <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Pinterest</a>
               <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Houzz</a>
