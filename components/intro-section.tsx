@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 
 export default function IntroSection() {
   return (
-    <section className="relative py-32 md:py-40 px-6 md:px-[12vw] lg:px-[16vw] bg-section-warm">
+    <section className="relative py-20 md:py-24 px-6 md:px-[8vw] bg-section-warm">
       {/* Vertical rule accent */}
-      <div className="absolute left-6 md:left-[4vw] top-16 bottom-16 w-px bg-border" />
+      <div className="absolute left-6 md:left-[4vw] top-10 bottom-10 w-px bg-border" />
 
       <div className="max-w-4xl mx-auto text-center">
         <motion.p
