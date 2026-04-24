@@ -38,7 +38,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-16 pb-24 md:pb-32">
             <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4 transition-all duration-300 hover:text-yellow-950 hover:text-[26px]"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
               Home Staging
@@ -90,7 +90,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
             <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4 transition-all duration-300 hover:text-yellow-950 hover:text-[26px]"
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
             >
               Interior Design
