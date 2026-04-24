@@ -20,7 +20,7 @@ const PATIO_IMG = 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?
 const ENTRYWAY_IMG = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80'
 
 const AUTOSCROLL_INTERVAL = 2000 // 2 seconds between scrolls
-const SCROLL_AMOUNT_PERCENT = 0.5 // Scroll 50% of container width
+const SCROLL_AMOUNT_PERCENT = 0.4 // Scroll 40% of container width
 
 export default function PortfolioSection() {
   const scrollRef = useRef<HTMLDivElement>(null)
