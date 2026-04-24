@@ -1,10 +1,20 @@
 "use client"
 
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 import { Instagram, Facebook, Linkedin } from 'lucide-react'
 import InquiryForm from './inquiry-form'
 
 export default function Footer() {
+  const gdcRef = useRef<HTMLDivElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: gdcRef,
+    offset: ["start end", "end end"]
+  })
+  
+  // Start at 80px down (more obscured), move up to 20px (slightly obscured)
+  const gdcY = useTransform(scrollYProgress, [0, 1], [80, 20])
+
   return (
     <footer id="contact" className="relative bg-foreground text-background">
       {/* Contact section */}
@@ -80,14 +90,14 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo */}
-        <div className="mt-16 overflow-hidden">
+        <div ref={gdcRef} className="mt-16 overflow-hidden">
           <motion.p
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 0.15, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.15 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
+            style={{ y: gdcY, marginBottom: '-2vw' }}
             className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
-            style={{ marginBottom: '-2vw' }}
           >
             GDC
           </motion.p>
