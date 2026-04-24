@@ -63,8 +63,8 @@ export default function Footer() {
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Follow</p>
             <div className="flex gap-6 md:justify-end">
               <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Instagram</a>
-              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Pinterest</a>
-              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Houzz</a>
+              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Facebook</a>
+              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Linkedin</a>
             </div>
             <div></div>
           </div>
