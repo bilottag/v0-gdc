@@ -16,7 +16,7 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="font-sans text-base tracking-[0.4em] uppercase text-background/50 mb-4"
+              className="font-sans text-lg font-semibold tracking-[0.4em] uppercase text-background/50 mb-4"
             >
               Get in Touch
             </motion.p>
