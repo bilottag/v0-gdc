@@ -51,7 +51,7 @@ export default function Navbar() {
               onClick={() => scrollTo(link.id)}
               className={`font-corbel text-xl font-bold tracking-widest uppercase transition-all duration-300 ${
                 scrolled 
-                  ? 'text-muted-foreground hover:text-amber-800 hover:scale-105' 
+                  ? 'text-muted-foreground hover:text-amber-950 hover:scale-105' 
                   : 'text-white hover:text-yellow-950 hover:scale-105'
               }`}
               style={{ textShadow: scrolled ? 'none' : '0 1px 2px rgba(0,0,0,0.3)' }}
@@ -86,7 +86,7 @@ export default function Navbar() {
             onClick={() => scrollTo('contact')}
             className={`font-corbel text-xl font-bold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
               scrolled 
-                ? 'border-primary text-primary hover:bg-amber-800 hover:border-amber-800 hover:text-white hover:scale-105'
+                ? 'border-primary text-primary hover:bg-amber-950 hover:border-amber-950 hover:text-white hover:scale-105'
                 : 'border-white text-white hover:bg-background hover:border-background hover:text-yellow-950 hover:scale-105'
             }`}
             style={{ textShadow: scrolled ? 'none' : '0 1px 2px rgba(0,0,0,0.3)' }}
