@@ -38,7 +38,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-16 pb-24 md:pb-32">
             <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4 transition-all duration-300 hover:text-yellow-950 hover:text-[26px]"
+              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
               Home Staging
@@ -58,7 +58,7 @@ export default function DualityHero() {
               animate={{ width: hovered === 'staging' ? 220 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-yellow-950 hover:text-[17px]">
                 <span className="block w-8 h-px bg-white" />
                 Enter Staging
               </span>
@@ -90,7 +90,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
             <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4 transition-all duration-300 hover:text-yellow-950 hover:text-[26px]"
+              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
             >
               Interior Design
@@ -110,7 +110,7 @@ export default function DualityHero() {
               animate={{ width: hovered === 'design' ? 220 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-yellow-950 hover:text-[17px]">
                 Explore Design
                 <span className="block w-8 h-px bg-white" />
               </span>
