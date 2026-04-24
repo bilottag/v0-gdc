@@ -208,6 +208,11 @@
   font-weight: 400;
 }
 
+/* Corbel utility class for navigation */
+.font-corbel {
+  font-family: 'Corbel', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
 /* Custom scrollbar for horizontal scroll */
 .horizontal-scroll::-webkit-scrollbar {
   height: 2px;
