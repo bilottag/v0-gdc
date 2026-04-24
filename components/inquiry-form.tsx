@@ -72,6 +72,7 @@ export default function InquiryForm({ serviceType = 'General', variant = 'light'
           ? "bg-background text-foreground hover:bg-background/90 rounded-none font-sans text-xs font-semibold tracking-[0.2em] uppercase px-8 py-6 w-full md:w-auto"
           : "bg-primary text-primary-foreground hover:bg-primary/90 rounded-none font-sans text-xs font-semibold tracking-[0.2em] uppercase px-8 py-6 w-full md:w-auto"
         }
+        style={{ fontSize: '14px' }}
       >
         {sending ? (
           <Loader2 size={16} className="animate-spin" />

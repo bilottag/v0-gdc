@@ -95,14 +95,14 @@ export default function ServiceCard({ title, subtitle, description, features, im
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.6 }}
                 >
-                  <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">
+                  <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4" style={{ fontSize: '20px', fontWeight: '600' }}>
                     {subtitle}
                   </p>
                   <h2 className="text-5xl md:text-6xl font-light text-foreground leading-tight mb-8" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
                     {title}
                   </h2>
                   <div className="w-12 h-px bg-primary mb-8" />
-                  <p className="font-sans text-lg text-muted-foreground leading-relaxed mb-12">
+                  <p className="font-sans text-lg text-muted-foreground leading-relaxed mb-12" style={{ fontSize: '20px' }}>
                     {description}
                   </p>
 
@@ -115,12 +115,12 @@ export default function ServiceCard({ title, subtitle, description, features, im
                         transition={{ delay: 0.3 + i * 0.1 }}
                         className="flex items-start gap-4 py-4 border-b border-border"
                       >
-                        <span className="font-serif text-2xl text-primary font-light">
+                        <span className="font-serif text-2xl text-primary font-light" style={{ fontSize: '26px' }}>
                           {String(i + 1).padStart(2, '0')}
                         </span>
                         <div>
-                          <p className="font-sans text-sm font-medium text-foreground">{feature.title}</p>
-                          <p className="font-sans text-sm text-muted-foreground mt-1">{feature.desc}</p>
+                          <p className="font-sans text-sm font-medium text-foreground" style={{ fontSize: '16px', fontWeight: '600' }}>{feature.title}</p>
+                          <p className="font-sans text-sm text-muted-foreground mt-1" style={{ fontSize: '15px' }}>{feature.desc}</p>
                         </div>
                       </motion.div>
                     ))}
@@ -131,7 +131,7 @@ export default function ServiceCard({ title, subtitle, description, features, im
                     <h3 className="font-serif text-3xl font-light text-foreground mb-2">
                       Begin Your Transformation
                     </h3>
-                    <p className="font-sans text-sm text-muted-foreground mb-8">
+                    <p className="font-sans text-sm text-muted-foreground mb-8" style={{ fontSize: '15px' }}>
                       Tell us about your space. We&apos;ll craft the perfect approach.
                     </p>
                     <InquiryForm serviceType={subtitle} />
