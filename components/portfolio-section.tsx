@@ -19,8 +19,8 @@ const OFFICE_IMG = 'https://images.unsplash.com/photo-1497366216548-37526070297c
 const PATIO_IMG = 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80'
 const ENTRYWAY_IMG = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80'
 
-const AUTOSCROLL_INTERVAL = 3000 // 3 seconds between scrolls
-const SCROLL_AMOUNT_PERCENT = 0.3 // Scroll 30% of container width
+const AUTOSCROLL_INTERVAL = 2000 // 2 seconds between scrolls
+const SCROLL_AMOUNT_PERCENT = 0.5 // Scroll 50% of container width
 
 export default function PortfolioSection() {
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -203,8 +203,8 @@ export default function PortfolioSection() {
           <button
             onClick={toggleAutoScroll}
             className={`w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 ${isAutoScrolling
-                ? 'border-primary bg-primary/10 text-primary hover:bg-primary hover:text-background'
-                : 'border-foreground/20 hover:bg-foreground hover:text-background'
+              ? 'border-primary bg-primary/10 text-primary hover:bg-primary hover:text-background'
+              : 'border-foreground/20 hover:bg-foreground hover:text-background'
               }`}
             aria-label={isAutoScrolling ? 'Pause autoscroll' : 'Play autoscroll'}
           >
