@@ -125,7 +125,7 @@ export default function PortfolioSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-serif text-4xl md:text-6xl font-semibold italic text-foreground"
+          className="font-serif text-4xl md:text-[56px] font-semibold italic text-foreground"
         >
           Selected Works
         </motion.h2>
