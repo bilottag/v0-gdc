@@ -116,7 +116,7 @@ export default function PortfolioSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-candara text-lg tracking-[0.4em] uppercase text-muted-foreground mb-4"
+          className="font-candara text-xl tracking-[0.4em] uppercase text-muted-foreground mb-4"
         >
           The Spatial Chronicle
         </motion.p>
@@ -125,7 +125,7 @@ export default function PortfolioSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-serif text-4xl md:text-6xl font-light text-foreground"
+          className="font-serif text-4xl md:text-6xl font-semibold italic text-foreground"
         >
           Selected Works
         </motion.h2>
@@ -185,7 +185,7 @@ export default function PortfolioSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-serif text-2xl md:text-3xl font-light text-foreground"
+          className="font-serif text-3xl md:text-5xl font-light italic text-foreground"
         >
           More Projects
         </motion.p>

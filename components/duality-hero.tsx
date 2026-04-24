@@ -38,7 +38,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-16 pb-24 md:pb-32">
             <motion.p
-              className="font-serif text-lg font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
               Home Staging
@@ -58,7 +58,7 @@ export default function DualityHero() {
               animate={{ width: hovered === 'staging' ? 160 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-xs tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3">
                 <span className="block w-8 h-px bg-white" />
                 Enter Staging
               </span>
@@ -90,7 +90,7 @@ export default function DualityHero() {
           </div>
           <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
             <motion.p
-              className="font-serif text-lg font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
             >
               Interior Design
@@ -110,7 +110,7 @@ export default function DualityHero() {
               animate={{ width: hovered === 'design' ? 220 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-xs tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3">
                 Explore Design
                 <span className="block w-8 h-px bg-white" />
               </span>
@@ -125,7 +125,7 @@ export default function DualityHero() {
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
       >
-        <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-white/60">
+        <span className="font-sans text-xs tracking-[0.4em] uppercase text-white/60">
           Scroll
         </span>
         <div className="w-px h-8 bg-white/40" />

@@ -30,7 +30,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-candara text-lg tracking-[0.4em] uppercase text-muted-foreground mb-4"
+          className="font-candara text-xl tracking-[0.4em] uppercase text-muted-foreground mb-4"
         >
           Our Expertise
         </motion.p>
@@ -39,9 +39,9 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-serif text-4xl md:text-6xl font-light text-foreground"
+          className="font-serif text-3xl md:text-5xl font-light italic text-foreground"
         >
-          Two Paths, One Vision
+          Two Paths - One Vision
         </motion.h2>
       </div>
 
