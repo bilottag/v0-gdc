@@ -17,7 +17,10 @@ export default function Navbar() {
 
   const scrollTo = (id: string) => {
     setMenuOpen(false)
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    // Small delay to allow mobile menu to close before scrolling
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    }, 100)
   }
 
   const links = [
