@@ -16,7 +16,7 @@ const _geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'Giuliana Design Co. | Luxury Home Staging & Interior Design',
   description: 'We choreograph emotion through intentional spaces. Premium home staging to accelerate sales and bespoke interior design to transform your living experience.',
-  keywords: ['home staging', 'interior design', 'luxury design', 'Austin interior designer', 'home transformation'],
+  keywords: ['home staging', 'interior design', 'luxury design', 'London Ontario interior designer', 'home transformation'],
   generator: 'v0.app',
   icons: {
     icon: [
