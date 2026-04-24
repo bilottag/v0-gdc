@@ -58,7 +58,7 @@ export default function DualityHero() {
               animate={{ width: hovered === 'staging' ? 220 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-yellow-950 hover:text-[17px]">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]">
                 <span className="block w-8 h-px bg-white" />
                 Enter Staging
               </span>
@@ -110,7 +110,7 @@ export default function DualityHero() {
               animate={{ width: hovered === 'design' ? 220 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-yellow-950 hover:text-[17px]">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]">
                 Explore Design
                 <span className="block w-8 h-px bg-white" />
               </span>
