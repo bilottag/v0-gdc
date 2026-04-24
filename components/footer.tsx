@@ -1,41 +1,17 @@
 "use client"
 
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { useRef, useEffect } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 import { Instagram, Facebook, Linkedin } from 'lucide-react'
 import InquiryForm from './inquiry-form'
 
 export default function Footer() {
-  const gdcContainerRef = useRef<HTMLDivElement>(null)
-  const rawY = useMotionValue(50)
-  const smoothY = useSpring(rawY, { stiffness: 100, damping: 30 })
-  const gdcY = useTransform(smoothY, (value) => `${value}%`)
   
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!gdcContainerRef.current) return
-      
-      const rect = gdcContainerRef.current.getBoundingClientRect()
-      const windowHeight = window.innerHeight
-      
-      // Calculate how far into view the element is (0 = just entering, 1 = fully visible)
-      const progress = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight + rect.height)))
-      
-      // Map progress: 0 -> 50% (half obscured), 1 -> 25% (quarter obscured)
-      const yValue = 50 - (progress * 25)
-      rawY.set(yValue)
-    }
-    
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll() // Initial call
-    
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [rawY])
 
   return (
     <footer id="contact" className="relative bg-foreground text-background">
       {/* Contact section */}
-      <div className="px-6 md:px-[8vw] py-20 md:py-24">
+      <div className="px-6 md:px-[8vw] py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
           <div>
             <motion.p
@@ -107,16 +83,12 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo */}
-        <div ref={gdcContainerRef} className="mt-16 overflow-hidden relative">
+        <div className="mt-8">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.15 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            style={{ 
-              y: gdcY,
-              marginBottom: '-2vw' 
-            }}
             className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
           >
             GDC

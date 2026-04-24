@@ -22,9 +22,9 @@ const designFeatures = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="relative py-20 md:py-24 px-6 md:px-[8vw] bg-section-cream">
+    <section id="services" className="relative py-12 md:py-16 px-6 md:px-[8vw] bg-section-cream">
       {/* Section header */}
-      <div className="mb-16 md:mb-24">
+      <div className="mb-8 md:mb-12">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
