@@ -52,9 +52,9 @@ export default function Navbar() {
               className={`font-corbel text-xl font-bold tracking-widest uppercase transition-all duration-300 ${
                 scrolled 
                   ? 'text-muted-foreground hover:text-foreground hover:scale-105' 
-                  : 'text-white hover:text-primary hover:scale-105'
+                  : 'text-white hover:text-yellow-950 hover:scale-105'
               }`}
-              style={{ textShadow: scrolled ? 'none' : '0 1px 3px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}
+              style={{ textShadow: scrolled ? 'none' : '0 1px 2px rgba(0,0,0,0.3)' }}
             >
               {link.label}
             </button>
@@ -87,9 +87,9 @@ export default function Navbar() {
             className={`font-corbel text-xl font-bold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
               scrolled 
                 ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:scale-105'
-                : 'border-white text-white hover:bg-background hover:border-background hover:text-primary hover:scale-105'
+                : 'border-white text-white hover:bg-background hover:border-background hover:text-yellow-950 hover:scale-105'
             }`}
-            style={{ textShadow: scrolled ? 'none' : '0 1px 3px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}
+            style={{ textShadow: scrolled ? 'none' : '0 1px 2px rgba(0,0,0,0.3)' }}
           >
             Inquire
           </button>
