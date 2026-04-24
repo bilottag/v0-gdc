@@ -47,16 +47,16 @@ export default function Footer() {
       <div className="border-t border-background/10 px-6 md:px-[8vw] py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
           {/* Contact details */}
-          <div className="space-y-3">
+          <div className="flex flex-col">
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Contact</p>
-            <p className="font-sans text-sm text-background/70">hello@giulianadesignco.com</p>
-            <p className="font-sans text-sm text-background/70">(555) 821-4300</p>
+            <p className="font-sans text-sm text-background/70 h-6 flex items-center">hello@giulianadesignco.com</p>
+            <p className="font-sans text-sm text-background/70 h-6 flex items-center">(555) 821-4300</p>
           </div>
 
-          <div className="space-y-3">
+          <div className="flex flex-col">
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40 mb-3">Location</p>
-            <p className="font-sans text-sm text-background/70">Austin, Texas</p>
-            <p className="font-sans text-sm text-background/70">Serving Central Texas & Beyond</p>
+            <p className="font-sans text-sm text-background/70 h-6 flex items-center">Austin, Texas</p>
+            <p className="font-sans text-sm text-background/70 h-6 flex items-center">Serving Central Texas & Beyond</p>
           </div>
 
           <div className="space-y-3 md:text-right">
