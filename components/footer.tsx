@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo */}
-        <div ref={gdcContainerRef} className="mt-16 overflow-hidden relative">
+        <div ref={gdcContainerRef} className="mt-8 overflow-hidden relative">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.15 }}
