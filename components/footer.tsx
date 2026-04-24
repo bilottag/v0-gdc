@@ -17,6 +17,7 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="font-sans text-lg font-semibold tracking-[0.4em] uppercase text-background/50 mb-4"
+              style={{ fontSize: '24px' }}
             >
               Get in Touch
             </motion.p>
@@ -26,6 +27,7 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-serif text-4xl md:text-6xl font-light text-background leading-tight mb-8"
+              style={{ fontSize: '56px', fontWeight: '100' }}
             >
               Let&apos;s Create
               <br />

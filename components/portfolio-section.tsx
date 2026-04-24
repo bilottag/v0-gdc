@@ -117,6 +117,7 @@ export default function PortfolioSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="font-candara text-xl tracking-[0.4em] uppercase text-muted-foreground mb-4"
+          style={{ fontSize: '20px', fontWeight: '600' }}
         >
           The Spatial Chronicle
         </motion.p>
@@ -126,6 +127,7 @@ export default function PortfolioSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="font-serif text-4xl md:text-[56px] font-semibold italic text-foreground"
+          style={{ fontSize: '50px', fontWeight: '400' }}
         >
           Selected Works
         </motion.h2>

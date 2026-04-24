@@ -40,6 +40,7 @@ export default function DualityHero() {
             <motion.p
               className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
+              style={{ boxShadow: '0 25px 50px -12px rgb(0 0 0 / 0.25)' }}
             >
               Home Staging
             </motion.p>
@@ -48,7 +49,7 @@ export default function DualityHero() {
               style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
-              <span className="font-thin">Sell the</span>
+              <span className="font-thin" style={{ boxShadow: '0 25px 50px -12px rgb(0 0 0 / 0.25)' }}>Sell the</span>
               <br />
               <span className="italic font-normal">Dream</span>
             </motion.h2>
