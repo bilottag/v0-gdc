@@ -236,7 +236,7 @@ export default function PortfolioSection() {
         onMouseLeave={handleMouseLeave}
         className="overflow-x-auto horizontal-scroll"
       >
-        <div className="flex gap-6 px-6 md:pl-[4vw] md:pr-[8vw] pb-8" style={{ width: 'max-content' }}>
+        <div className="flex gap-6 pl-6 md:pl-[4vw] pr-6 md:pr-[8vw] pb-8" style={{ width: 'max-content' }}>
           {/* Kitchen panorama */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
