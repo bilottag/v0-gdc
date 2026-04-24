@@ -8,8 +8,8 @@ const DESIGN_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6
 
 const stagingFeatures = [
   { title: 'Strategic Assessment', desc: 'We analyze your property through the lens of the ideal buyer, identifying every opportunity to maximize appeal.' },
-  { title: 'The Staged Aesthetic', desc: 'Our curated collection of furnishings and art transforms vacant or lived-in spaces into aspirational environments.' },
-  { title: 'ROI-Driven Approach', desc: 'Staged homes sell 73% faster on average. We focus on the details that drive offers above asking price.' },
+  { title: 'The Staged Aesthetic', desc: 'Our curated collection of furnishings, textiles, accessories and art, transforms vacant or lived-in spaces into aspirational environments.' },
+  { title: 'Return On Investment Driven Approach', desc: 'It has been proven that staged homes sell 75% faster on average. We focus on the details that drive offers above asking price.' },
   { title: 'Full-Service Execution', desc: 'From consultation through installation and de-staging — we handle every detail so you can focus on closing.' },
 ]
 
