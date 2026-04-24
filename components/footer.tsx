@@ -16,7 +16,7 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="font-sans text-xs tracking-[0.4em] uppercase text-background/50 mb-4"
+              className="font-sans text-base tracking-[0.4em] uppercase text-background/50 mb-4"
             >
               Get in Touch
             </motion.p>
@@ -49,27 +49,27 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Contact details */}
           <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Contact</p>
-            <p className="font-sans text-sm text-background/70">hello@giulianadesignco.com</p>
-            <p className="font-sans text-sm text-background/70">(555) 821-4300</p>
+            <p className="font-sans text-base tracking-[0.3em] uppercase text-background/40">Contact</p>
+            <p className="font-sans text-base text-background/70">GiulianaDesignCo@gmail.com</p>
+            <p className="font-sans text-base text-background/70">(519) 859-0318</p>
           </div>
 
           <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Location</p>
-            <p className="font-sans text-sm text-background/70">Austin, Texas</p>
-            <p className="font-sans text-sm text-background/70">Serving Central Texas & Beyond</p>
+            <p className="font-sans text-base tracking-[0.3em] uppercase text-background/40">Location</p>
+            <p className="font-sans text-base text-background/70">London, Ontario</p>
+            <p className="font-sans text-sm text-background/70">Serving Southwestern Ontario & Beyond</p>
           </div>
 
           <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3 md:justify-self-end">
-            <p className="font-sans text-sm uppercase tracking-[0.3em] text-background/40">Follow</p>
+            <p className="font-sans text-base uppercase tracking-[0.3em] text-background/40">Follow</p>
             <div className="flex gap-6">
-              <a href="#" className="text-background/70 hover:text-background transition-colors" aria-label="Instagram">
+              <a href="#" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background transition-colors" aria-label="Facebook">
+              <a href="#" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background transition-colors" aria-label="LinkedIn">
+              <a href="#" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
