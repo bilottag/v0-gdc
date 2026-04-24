@@ -68,7 +68,7 @@ export default function Navbar() {
             width={256}
             height={256}
             className={`h-auto transition-all duration-500 ${
-              scrolled ? 'w-24 md:w-32' : 'w-48 md:w-64'
+              scrolled ? 'w-32 md:w-40' : 'w-48 md:w-64'
             }`}
             priority
           />
