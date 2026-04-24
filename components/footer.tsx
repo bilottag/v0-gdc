@@ -1,6 +1,7 @@
 "use client"
 
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 import { Instagram, Facebook, Linkedin } from 'lucide-react'
 import InquiryForm from './inquiry-form'
 
