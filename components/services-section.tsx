@@ -22,7 +22,7 @@ const designFeatures = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="relative py-24 md:py-32 px-6 md:px-[8vw] bg-section-cream">
+    <section id="services" className="relative py-20 md:py-24 px-6 md:px-[8vw] bg-section-cream">
       {/* Section header */}
       <div className="mb-16 md:mb-24">
         <motion.p

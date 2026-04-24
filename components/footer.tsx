@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="relative bg-foreground text-background">
       {/* Contact section */}
-      <div className="px-6 md:px-[8vw] py-24 md:py-32">
+      <div className="px-6 md:px-[8vw] py-20 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
           <div>
             <motion.p
