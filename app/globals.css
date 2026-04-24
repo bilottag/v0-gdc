@@ -35,6 +35,38 @@
   src: url('/fonts/Candara_Bold_Italic.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Corbel';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Corbel.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Corbel';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Corbel_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Corbel';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Corbel_Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Corbel';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Corbel_Bold_Italic.ttf') format('truetype');
+}
+
 :root {
   --font-heading: 'Candara', 'Segoe UI', system-ui, sans-serif;
   --font-body: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
