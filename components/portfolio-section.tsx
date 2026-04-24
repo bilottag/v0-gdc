@@ -19,7 +19,7 @@ const OFFICE_IMG = 'https://images.unsplash.com/photo-1497366216548-37526070297c
 const PATIO_IMG = 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80'
 const ENTRYWAY_IMG = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80'
 
-const AUTOSCROLL_INTERVAL = 4000 // 4 seconds between scrolls
+const AUTOSCROLL_INTERVAL = 3000 // 3 seconds between scrolls
 const SCROLL_AMOUNT_PERCENT = 0.3 // Scroll 30% of container width
 
 export default function PortfolioSection() {
