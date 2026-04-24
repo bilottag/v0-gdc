@@ -9,11 +9,12 @@ export default function Footer() {
   const gdcRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: gdcRef,
-    offset: ["start end", "end end"]
+    offset: ["start end", "end start"]
   })
   
-  // Start at 80px down (more obscured), move up to 20px (slightly obscured)
-  const gdcY = useTransform(scrollYProgress, [0, 1], [80, 20])
+  // Start at 50% down (half-obscured), move up to 25% (quarter-obscured)
+  // Using percentage of the element height via CSS transform
+  const gdcY = useTransform(scrollYProgress, [0, 0.7], ["50%", "25%"])
 
   return (
     <footer id="contact" className="relative bg-foreground text-background">
