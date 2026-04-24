@@ -42,17 +42,17 @@ export default function ServiceCard({ title, subtitle, description, features, im
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
 
           <div className={`absolute bottom-0 left-0 right-0 p-8 md:p-12 ${flipped ? 'text-right' : ''}`}>
-            <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-white/60 mb-3">
+            <p className="font-sans text-xl font-black tracking-[0.4em] uppercase text-white/60 mb-3">
               {subtitle}
             </p>
-            <h3 className="text-4xl md:text-5xl font-light text-white leading-tight mb-4" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
+            <h3 className="text-5xl md:text-5xl font-thin text-white leading-tight mb-4" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
               {title}
             </h3>
-            <p className="font-sans text-sm text-white/70 max-w-sm leading-relaxed mb-6">
+            <p className="font-sans text-base text-white/70 max-w-sm leading-relaxed mb-6">
               {description}
             </p>
             <div className={`flex items-center gap-3 ${flipped ? 'justify-end' : ''}`}>
-              <span className="font-sans text-xs tracking-[0.3em] uppercase text-white">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white">
                 Learn More
               </span>
               <ArrowRight size={14} className="text-white group-hover:translate-x-1 transition-transform" />

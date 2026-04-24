@@ -48,9 +48,9 @@ export default function DualityHero() {
               style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
             >
-              <span className="font-medium">Sell the</span>
+              <span className="font-thin">Sell the</span>
               <br />
-              <span className="italic font-thin">Dream</span>
+              <span className="italic font-normal">Dream</span>
             </motion.h2>
             <motion.div
               className="mt-8 overflow-hidden"
@@ -100,7 +100,7 @@ export default function DualityHero() {
               style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
             >
-              <span className="font-medium">Live the</span>
+              <span className="font-thin">Live the</span>
               <br />
               <span className="italic font-normal">Reality</span>
             </motion.h2>
