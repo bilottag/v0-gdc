@@ -6,17 +6,17 @@ import { Instagram, Facebook, Linkedin } from 'lucide-react'
 import InquiryForm from './inquiry-form'
 
 export default function Footer() {
-  const footerRef = useRef<HTMLElement>(null)
+  const gdcContainerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
-    target: footerRef,
-    offset: ["start end", "end end"]
+    target: gdcContainerRef,
+    offset: ["start end", "center center"]
   })
   
-  // Start at 50% of element height (half-obscured), animate to 25% (quarter-obscured)
+  // Start at 50% down (half-obscured), animate to 25% (quarter-obscured)
   const gdcY = useTransform(scrollYProgress, [0, 1], ["50%", "25%"])
 
   return (
-    <footer ref={footerRef} id="contact" className="relative bg-foreground text-background">
+    <footer id="contact" className="relative bg-foreground text-background">
       {/* Contact section */}
       <div className="px-6 md:px-[8vw] py-20 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo */}
-        <div className="mt-16 overflow-hidden">
+        <div ref={gdcContainerRef} className="mt-16 overflow-hidden relative">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.15 }}
