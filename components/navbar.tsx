@@ -33,8 +33,8 @@ export default function Navbar() {
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-background/80 backdrop-blur-xl border-b border-border/50'
-          : 'bg-white/20 backdrop-blur-[3px]'
+          ? 'bg-background/85 backdrop-blur-xl border-b border-border/50'
+          : 'bg-white/35 backdrop-blur-[3px]'
       }`}
     >
       <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
