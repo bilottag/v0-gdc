@@ -73,11 +73,11 @@ export default function Footer() {
         <div className="mt-16 overflow-hidden">
           <motion.p
             initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 0.06, y: 0 }}
+            whileInView={{ opacity: 0.15, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
             className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
-            style={{ marginBottom: '-5vw' }}
+            style={{ marginBottom: '-2vw' }}
           >
             GDC
           </motion.p>
