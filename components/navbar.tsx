@@ -52,7 +52,7 @@ export default function Navbar() {
               className={`font-corbel text-xl font-bold tracking-widest uppercase transition-all duration-300 ${
                 scrolled 
                   ? 'text-muted-foreground hover:text-foreground hover:scale-105' 
-                  : 'text-white hover:text-stone-300 hover:scale-105'
+                  : 'text-white hover:text-amber-700 hover:scale-105'
               }`}
               style={{ textShadow: scrolled ? 'none' : '0 1px 3px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}
             >
@@ -87,7 +87,7 @@ export default function Navbar() {
             className={`font-corbel text-xl font-bold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 ${
               scrolled 
                 ? 'border-primary text-primary hover:bg-primary hover:text-primary-foreground hover:scale-105'
-                : 'border-white text-white hover:bg-stone-400 hover:border-stone-400 hover:text-stone-900 hover:scale-105'
+                : 'border-white text-white hover:bg-amber-50 hover:border-amber-50 hover:text-amber-900 hover:scale-105'
             }`}
             style={{ textShadow: scrolled ? 'none' : '0 1px 3px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}
           >
