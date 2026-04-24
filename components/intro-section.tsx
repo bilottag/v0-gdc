@@ -15,7 +15,7 @@ export default function IntroSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="font-candara text-4xl tracking-[0.4em] uppercase text-muted-foreground mb-8"
-          style={{ fontSize: '34px', boxShadow: '0 25px 50px -12px rgb(0 0 0 / 0.25)' }}
+          style={{ fontSize: '34px' }}
         >
           Giuliana Design Co.
         </motion.p>
