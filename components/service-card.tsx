@@ -48,7 +48,7 @@ export default function ServiceCard({ title, subtitle, description, features, im
             <h3 className="text-5xl md:text-5xl font-thin text-white leading-tight mb-4" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
               {title}
             </h3>
-            <p className="font-sans text-base text-white/70 max-w-sm leading-relaxed mb-6">
+            <p className={`font-sans text-base text-white/70 max-w-sm leading-relaxed mb-6 ${flipped ? 'ml-auto' : ''}`}>
               {description}
             </p>
             <div className={`flex items-center gap-3 ${flipped ? 'justify-end' : ''}`}>
