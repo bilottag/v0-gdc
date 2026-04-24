@@ -60,9 +60,9 @@ export default function Footer() {
             <p className="font-sans text-sm text-background/70">Serving Central Texas & Beyond</p>
           </div>
 
-          <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3 md:text-right">
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Follow</p>
-            <div className="flex gap-6 md:justify-end">
+          <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3">
+            <p className="font-sans text-sm text-background/40">Follow</p>
+            <div className="flex gap-6">
               <a href="#" className="text-background/70 hover:text-background transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
