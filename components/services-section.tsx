@@ -48,7 +48,7 @@ export default function ServicesSection() {
       {/* Service cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <ServiceCard
-          title="The Staged Aesthetic"
+          title={<>The Staged <span className="font-bold italic">Aesthetic</span></>}
           subtitle="Home Staging"
           description="Preparing your property to captivate buyers from the moment they cross the threshold. We orchestrate every detail to accelerate your sale and maximize your return."
           features={stagingFeatures}
@@ -57,7 +57,7 @@ export default function ServicesSection() {
         />
         <div className="md:mt-16">
           <ServiceCard
-            title="The Curated Life"
+            title={<>The Curated <span className="font-bold italic">Life</span></>}
             subtitle="Interior Design"
             description="Reimagining the spaces where life happens. From a single room refresh to a complete home transformation, we design environments that resonate with who you are."
             features={designFeatures}

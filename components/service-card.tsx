@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, ReactNode } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, X } from 'lucide-react'
 import InquiryForm from './inquiry-form'
@@ -11,7 +11,7 @@ interface Feature {
 }
 
 interface ServiceCardProps {
-  title: string
+  title: ReactNode
   subtitle: string
   description: string
   features: Feature[]
