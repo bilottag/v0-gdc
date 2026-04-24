@@ -7,7 +7,7 @@ import InquiryForm from './inquiry-form'
 
 export default function Footer() {
   const gdcContainerRef = useRef<HTMLDivElement>(null)
-  const rawY = useMotionValue(50)
+  const rawY = useMotionValue(67)
   const smoothY = useSpring(rawY, { stiffness: 100, damping: 30 })
   const gdcY = useTransform(smoothY, (value) => `${value}%`)
   
@@ -21,8 +21,8 @@ export default function Footer() {
       // Calculate how far into view the element is (0 = just entering, 1 = fully visible)
       const progress = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight + rect.height)))
       
-      // Map progress: 0 -> 50% (half obscured), 1 -> 25% (quarter obscured)
-      const yValue = 50 - (progress * 25)
+      // Map progress: 0 -> 67% obscured, 1 -> 67% obscured (stays at 67%)
+      const yValue = 67 - (progress * 10)
       rawY.set(yValue)
     }
     
