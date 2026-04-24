@@ -45,7 +45,7 @@ export default function ServiceCard({ title, subtitle, description, features, im
             <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-white/60 mb-3">
               {subtitle}
             </p>
-            <h3 className="font-serif text-4xl md:text-5xl font-light text-white leading-tight mb-4">
+            <h3 className="text-4xl md:text-5xl font-light text-white leading-tight mb-4" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
               {title}
             </h3>
             <p className="font-sans text-sm text-white/70 max-w-sm leading-relaxed mb-6">
@@ -98,7 +98,7 @@ export default function ServiceCard({ title, subtitle, description, features, im
                   <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4">
                     {subtitle}
                   </p>
-                  <h2 className="font-serif text-5xl md:text-6xl font-light text-foreground leading-tight mb-8">
+                  <h2 className="text-5xl md:text-6xl font-light text-foreground leading-tight mb-8" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
                     {title}
                   </h2>
                   <div className="w-12 h-px bg-primary mb-8" />
