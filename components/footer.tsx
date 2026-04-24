@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion'
+import { Instagram, Facebook, Linkedin } from 'lucide-react'
 import InquiryForm from './inquiry-form'
 
 export default function Footer() {
@@ -61,10 +62,16 @@ export default function Footer() {
 
           <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3 md:text-right">
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-background/40">Follow</p>
-            <div className="flex gap-6 md:justify-end">
-              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Instagram</a>
-              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Facebook</a>
-              <a href="#" className="font-sans text-sm text-background/70 hover:text-background transition-colors">Linkedin</a>
+            <div className="flex gap-4 md:justify-end">
+              <a href="#" className="text-background/70 hover:text-background transition-colors" aria-label="Instagram">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-background/70 hover:text-background transition-colors" aria-label="Facebook">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="text-background/70 hover:text-background transition-colors" aria-label="LinkedIn">
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
             <div></div>
           </div>
