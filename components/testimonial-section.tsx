@@ -30,6 +30,7 @@ export default function TestimonialSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="font-candara text-2xl font-semibold tracking-[0.4em] uppercase text-muted-foreground mb-16 text-center"
+          style={{ fontSize: '24px', fontWeight: '600' }}
         >
           Words from Our Clients
         </motion.p>

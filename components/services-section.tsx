@@ -31,6 +31,7 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           className="font-candara text-[22px] font-semibold tracking-[0.4em] uppercase text-muted-foreground mb-4"
+          style={{ fontSize: '20px', fontWeight: '600' }}
         >
           Our Expertise
         </motion.p>

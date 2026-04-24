@@ -69,8 +69,8 @@ export default function InquiryForm({ serviceType = 'General', variant = 'light'
         type="submit"
         disabled={sending}
         className={isDark 
-          ? "bg-background text-foreground hover:bg-background/90 rounded-none font-sans text-xs tracking-[0.2em] uppercase px-8 py-6 w-full md:w-auto"
-          : "bg-primary text-primary-foreground hover:bg-primary/90 rounded-none font-sans text-xs tracking-[0.2em] uppercase px-8 py-6 w-full md:w-auto"
+          ? "bg-background text-foreground hover:bg-background/90 rounded-none font-sans text-xs font-semibold tracking-[0.2em] uppercase px-8 py-6 w-full md:w-auto"
+          : "bg-primary text-primary-foreground hover:bg-primary/90 rounded-none font-sans text-xs font-semibold tracking-[0.2em] uppercase px-8 py-6 w-full md:w-auto"
         }
       >
         {sending ? (

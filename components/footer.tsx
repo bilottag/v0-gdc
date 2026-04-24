@@ -1,10 +1,37 @@
 "use client"
 
-import { motion } from 'framer-motion'
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import { useRef, useEffect } from 'react'
 import { Instagram, Facebook, Linkedin } from 'lucide-react'
 import InquiryForm from './inquiry-form'
 
 export default function Footer() {
+  const gdcContainerRef = useRef<HTMLDivElement>(null)
+  const rawY = useMotionValue(50)
+  const smoothY = useSpring(rawY, { stiffness: 100, damping: 30 })
+  const gdcY = useTransform(smoothY, (value) => `${value}%`)
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!gdcContainerRef.current) return
+      
+      const rect = gdcContainerRef.current.getBoundingClientRect()
+      const windowHeight = window.innerHeight
+      
+      // Calculate how far into view the element is (0 = just entering, 1 = fully visible)
+      const progress = Math.max(0, Math.min(1, (windowHeight - rect.top) / (windowHeight + rect.height)))
+      
+      // Map progress: 0 -> 50% (half obscured), 1 -> 25% (quarter obscured)
+      const yValue = 50 - (progress * 25)
+      rawY.set(yValue)
+    }
+    
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll() // Initial call
+    
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [rawY])
+
   return (
     <footer id="contact" className="relative bg-foreground text-background">
       {/* Contact section */}
@@ -17,6 +44,7 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="font-sans text-lg font-semibold tracking-[0.4em] uppercase text-background/50 mb-4"
+              style={{ fontSize: '24px' }}
             >
               Get in Touch
             </motion.p>
@@ -26,6 +54,7 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-serif text-4xl md:text-6xl font-light text-background leading-tight mb-8"
+              style={{ fontSize: '56px', fontWeight: '100' }}
             >
               Let&apos;s Create
               <br />
@@ -78,14 +107,17 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo */}
-        <div className="mt-16 overflow-hidden">
+        <div ref={gdcContainerRef} className="mt-16 overflow-hidden relative">
           <motion.p
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 0.15, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.15 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
+            style={{ 
+              y: gdcY,
+              marginBottom: '-2vw' 
+            }}
             className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
-            style={{ marginBottom: '-2vw' }}
           >
             GDC
           </motion.p>

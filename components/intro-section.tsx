@@ -26,6 +26,7 @@ export default function IntroSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance"
+          style={{ fontSize: '60px' }}
         >
           We don&apos;t decorate spaces.
           <br />
