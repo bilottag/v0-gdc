@@ -36,7 +36,7 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-between h-full p-8 md:p-16 pt-72 md:pt-80 pb-24 md:pb-32">
+          <div className="relative z-10 flex flex-col justify-between h-full p-8 md:p-16 pt-48 md:pt-56 pb-20 md:pb-24">
             <div>
               <motion.p
                 className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
@@ -90,7 +90,7 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-between items-end h-full p-8 md:p-16 pt-72 md:pt-80 pb-24 md:pb-32 text-right">
+          <div className="relative z-10 flex flex-col justify-between items-end h-full p-8 md:p-16 pt-48 md:pt-56 pb-20 md:pb-24 text-right">
             <div>
               <motion.p
                 className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
