@@ -36,16 +36,16 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-between h-full p-6 md:p-12 pt-44 md:pt-52 pb-16 md:pb-20">
+          <div className="relative z-10 flex flex-col justify-between h-full p-8 md:p-16 pt-[22rem] md:pt-[24rem] pb-24 md:pb-28">
             <div>
               <motion.p
-                className="font-serif text-lg md:text-xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-2 md:mb-4"
+                className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
                 animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
               >
                 Home Staging
               </motion.p>
               <motion.h2
-                className="text-4xl md:text-5xl lg:text-6xl text-white leading-none"
+                className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
                 style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
                 animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
               >
@@ -90,16 +90,16 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-between items-end h-full p-6 md:p-12 pt-44 md:pt-52 pb-16 md:pb-20 text-right">
+          <div className="relative z-10 flex flex-col justify-between items-end h-full p-8 md:p-16 pt-[22rem] md:pt-[24rem] pb-24 md:pb-28 text-right">
             <div>
               <motion.p
-                className="font-serif text-lg md:text-xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-2 md:mb-4"
+                className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
                 animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
               >
                 Interior Design
               </motion.p>
               <motion.h2
-                className="text-4xl md:text-5xl lg:text-6xl text-white leading-none"
+                className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
                 style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
                 animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
               >
