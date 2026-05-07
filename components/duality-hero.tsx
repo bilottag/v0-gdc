@@ -36,7 +36,7 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-16 pb-24 md:pb-32">
+          <div className="relative z-10 flex flex-col justify-start h-full p-8 md:p-16 pt-52 md:pt-56">
             <motion.p
               className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
@@ -88,7 +88,7 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
+          <div className="relative z-10 flex flex-col justify-start items-end h-full p-8 md:p-16 pt-52 md:pt-56 text-right">
             <motion.p
               className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
               animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
