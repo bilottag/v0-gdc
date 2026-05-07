@@ -56,8 +56,8 @@ export default function DualityHero() {
             </div>
             <motion.div
               className="overflow-hidden"
-              initial={{ width: 0 }}
-              animate={{ width: hovered === 'staging' ? 250 : 0 }}
+              initial={{ width: 250 }}
+              animate={{ width: 250, opacity: hovered === 'staging' ? 1 : 0.7 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
               <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]" style={{ fontWeight: '600' }}>
@@ -110,8 +110,8 @@ export default function DualityHero() {
             </div>
             <motion.div
               className="overflow-hidden flex justify-end"
-              initial={{ width: 0 }}
-              animate={{ width: hovered === 'design' ? 250 : 0 }}
+              initial={{ width: 250 }}
+              animate={{ width: 250, opacity: hovered === 'design' ? 1 : 0.7 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
               <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]" style={{ fontWeight: '600' }}>
