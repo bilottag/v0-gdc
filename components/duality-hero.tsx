@@ -36,24 +36,26 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-start h-full p-8 md:p-16 pt-72 md:pt-80">
-            <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
-              animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
-            >
-              Home Staging
-            </motion.p>
-            <motion.h2
-              className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
-              style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
-              animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
-            >
-              <span className="font-thin">Sell the</span>
-              <br />
-              <span className="italic font-normal">Dream</span>
-            </motion.h2>
+          <div className="relative z-10 flex flex-col justify-between h-full p-8 md:p-16 pt-72 md:pt-80 pb-24 md:pb-32">
+            <div>
+              <motion.p
+                className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+                animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
+              >
+                Home Staging
+              </motion.p>
+              <motion.h2
+                className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
+                style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
+                animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
+              >
+                <span className="font-thin">Sell the</span>
+                <br />
+                <span className="italic font-normal">Dream</span>
+              </motion.h2>
+            </div>
             <motion.div
-              className="mt-8 overflow-hidden"
+              className="overflow-hidden"
               initial={{ width: 0 }}
               animate={{ width: hovered === 'staging' ? 250 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
@@ -88,24 +90,26 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-start items-end h-full p-8 md:p-16 pt-72 md:pt-80 text-right">
-            <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
-              animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
-            >
-              Interior Design
-            </motion.p>
-            <motion.h2
-              className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
-              style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
-              animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
-            >
-              <span className="font-thin">Live the</span>
-              <br />
-              <span className="italic font-normal">Reality</span>
-            </motion.h2>
+          <div className="relative z-10 flex flex-col justify-between items-end h-full p-8 md:p-16 pt-72 md:pt-80 pb-24 md:pb-32 text-right">
+            <div>
+              <motion.p
+                className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+                animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
+              >
+                Interior Design
+              </motion.p>
+              <motion.h2
+                className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
+                style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
+                animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
+              >
+                <span className="font-thin">Live the</span>
+                <br />
+                <span className="italic font-normal">Reality</span>
+              </motion.h2>
+            </div>
             <motion.div
-              className="mt-8 overflow-hidden flex justify-end"
+              className="overflow-hidden flex justify-end"
               initial={{ width: 0 }}
               animate={{ width: hovered === 'design' ? 250 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
