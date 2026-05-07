@@ -14,8 +14,8 @@ export default function IntroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-candara text-4xl tracking-[0.4em] uppercase text-muted-foreground mb-8"
-          style={{ fontSize: '34px' }}
+          className="font-candara text-4xl tracking-[0.4em] uppercase mb-8"
+          style={{ fontSize: '30px', color: '#695a40' }}
         >
           Giuliana Design Co.
         </motion.p>
@@ -26,7 +26,7 @@ export default function IntroSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
           className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance"
-          style={{ fontSize: '60px' }}
+          style={{ fontSize: '50px' }}
         >
           We don&apos;t decorate spaces.
           <br />
