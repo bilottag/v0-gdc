@@ -36,29 +36,31 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-16 pb-24 md:pb-32">
-            <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
-              animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
-            >
-              Home Staging
-            </motion.p>
-            <motion.h2
-              className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
-              style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
-              animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
-            >
-              <span className="font-thin">Sell the</span>
-              <br />
-              <span className="italic font-normal">Dream</span>
-            </motion.h2>
+          <div className="relative z-10 flex flex-col justify-between h-full p-8 md:p-16 pt-[22rem] md:pt-[24rem] pb-24 md:pb-28">
+            <div>
+              <motion.p
+                className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+                animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
+              >
+                Home Staging
+              </motion.p>
+              <motion.h2
+                className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
+                style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
+                animate={{ opacity: hovered === 'design' ? 0.4 : 1 }}
+              >
+                <span className="font-thin">Sell the</span>
+                <br />
+                <span className="italic font-normal">Dream</span>
+              </motion.h2>
+            </div>
             <motion.div
-              className="mt-8 overflow-hidden"
-              initial={{ width: 0 }}
-              animate={{ width: hovered === 'staging' ? 250 : 0 }}
+              className="overflow-hidden"
+              initial={{ width: 250 }}
+              animate={{ width: 250, opacity: hovered === 'staging' ? 1 : 0.7 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]" style={{ fontWeight: '600' }}>
                 <span className="block w-8 h-px bg-white" />
                 Enter Staging
               </span>
@@ -88,29 +90,31 @@ export default function DualityHero() {
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
-          <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
-            <motion.p
-              className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
-              animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
-            >
-              Interior Design
-            </motion.p>
-            <motion.h2
-              className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
-              style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
-              animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
-            >
-              <span className="font-thin">Live the</span>
-              <br />
-              <span className="italic font-normal">Reality</span>
-            </motion.h2>
+          <div className="relative z-10 flex flex-col justify-between items-end h-full p-8 md:p-16 pt-[22rem] md:pt-[24rem] pb-24 md:pb-28 text-right">
+            <div>
+              <motion.p
+                className="font-serif text-2xl font-semibold italic tracking-[0.35em] uppercase text-white/70 mb-4"
+                animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
+              >
+                Interior Design
+              </motion.p>
+              <motion.h2
+                className="text-5xl md:text-7xl lg:text-8xl text-white leading-none"
+                style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}
+                animate={{ opacity: hovered === 'staging' ? 0.4 : 1 }}
+              >
+                <span className="font-thin">Live the</span>
+                <br />
+                <span className="italic font-normal">Reality</span>
+              </motion.h2>
+            </div>
             <motion.div
-              className="mt-8 overflow-hidden flex justify-end"
-              initial={{ width: 0 }}
-              animate={{ width: hovered === 'design' ? 250 : 0 }}
+              className="overflow-hidden flex justify-end"
+              initial={{ width: 250 }}
+              animate={{ width: 250, opacity: hovered === 'design' ? 1 : 0.7 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]">
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]" style={{ fontWeight: '600' }}>
                 Explore Design
                 <span className="block w-8 h-px bg-white" />
               </span>
@@ -125,7 +129,7 @@ export default function DualityHero() {
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
       >
-        <span className="font-sans text-xs tracking-[0.4em] uppercase text-white/60">
+        <span className="font-sans tracking-[0.4em] uppercase" style={{ fontSize: '15px', fontStyle: 'italic', fontWeight: '600', color: 'rgba(254, 254, 254, 0.76)' }}>
           Scroll
         </span>
         <div className="w-px h-8 bg-white/40" />
