@@ -110,7 +110,7 @@ export default function DualityHero() {
               animate={{ width: hovered === 'design' ? 250 : 0 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px]" style={{ fontSize: '18px', fontWeight: '700' }}>
+              <span className="font-sans text-sm tracking-[0.3em] uppercase text-white whitespace-nowrap flex items-center gap-3 transition-all duration-300 hover:text-[17px] pr-4" style={{ fontSize: '18px', fontWeight: '700' }}>
                 Explore Design
                 <span className="block w-8 h-px bg-white" />
               </span>
