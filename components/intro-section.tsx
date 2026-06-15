@@ -8,6 +8,17 @@ export default function IntroSection() {
       {/* Vertical rule accent */}
       <div className="absolute left-6 md:left-[4vw] top-10 bottom-10 w-px bg-border" />
 
+      <motion.h2
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+        className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance text-center mb-8"
+        style={{ fontSize: '60px' }}
+      >
+        Style that <em className="italic text-primary">Sells</em>, Design that Lasts
+      </motion.h2>
+
       <div className="max-w-4xl mx-auto text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -19,19 +30,6 @@ export default function IntroSection() {
         >
           Giuliana Design Co.
         </motion.p>
-
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance"
-          style={{ fontSize: '60px' }}
-        >
-          We don&apos;t decorate spaces.
-          <br />
-          We <em className="italic text-primary">choreograph</em> emotion.
-        </motion.h2>
 
         <motion.div
           initial={{ scaleX: 0 }}
