@@ -23,9 +23,22 @@ export default function InquiryForm({ serviceType = 'General', variant = 'light'
       return
     }
     setSending(true)
-    // Simulate a brief delay for UX
-    await new Promise(r => setTimeout(r, 1200))
-    toast.success("Thank you! We'll be in touch within 24 hours.")
+
+    const subject = `${serviceType} Inquiry from ${form.name}`
+    const body = [
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Phone: ${form.phone || 'N/A'}`,
+      `Service: ${serviceType}`,
+      '',
+      'Message:',
+      form.message || 'N/A',
+    ].join('\n')
+
+    const mailtoUrl = `mailto:GiulianaDesignCo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailtoUrl
+
+    toast.success('Opening your email app to send the inquiry...')
     setForm({ name: '', email: '', phone: '', message: '' })
     setSending(false)
   }

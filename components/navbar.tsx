@@ -41,7 +41,7 @@ export default function Navbar() {
       }`}
     >
       <div className={`flex items-center justify-between px-6 md:px-12 relative overflow-visible transition-all duration-500 ${
-        scrolled ? 'py-10' : 'py-[3.25rem]'
+        scrolled ? 'py-10' : 'py-[3.75rem]'
       }`}>
         {/* Left nav links */}
         <div className="hidden md:flex items-center gap-10">
@@ -76,7 +76,6 @@ export default function Navbar() {
             className={`h-auto transition-all duration-500 ${
               scrolled ? 'w-24 md:w-28' : 'w-32 md:w-40'
             }`}
-            style={{ boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)' }}
             priority
           />
         </button>
