@@ -60,7 +60,7 @@ export default function ServicesSection() {
           <ServiceCard
             title={<>The Curated <span className="italic">Life</span></>}
             subtitle="Interior Design"
-            description="We transform your property into a buyer's must-have. Our meticulous preparation accelerates your timeline and maximizes your equity, turning a first impression into a closed deal."
+            description="Reimagining the spaces where life happens. From a single room refresh to a complete home transformation, we design environments that resonate with who you are."
             features={designFeatures}
             image={DESIGN_IMG}
             imageAlt="Elegant bedroom interior design"
