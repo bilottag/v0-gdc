@@ -25,12 +25,12 @@ export default function IntroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance"
-          style={{ fontSize: '60px' }}
+          className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance text-center mb-8"
+          style={{ fontSize: '50px' }}
         >
-          We don&apos;t decorate spaces.
+          Style that <em className="italic text-primary">Sells</em>
           <br />
-          We <em className="italic text-primary">choreograph</em> emotion.
+          Design that <em className="italic text-primary">Lasts</em>
         </motion.h2>
 
         <motion.div

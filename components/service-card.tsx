@@ -98,7 +98,7 @@ export default function ServiceCard({ title, subtitle, description, features, im
                   <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4" style={{ fontSize: '20px', fontWeight: '600' }}>
                     {subtitle}
                   </p>
-                  <h2 className="text-5xl md:text-6xl font-light text-foreground leading-tight mb-8" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
+                  <h2 className="text-5xl md:text-6xl font-light text-foreground leading-tight mb-8" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif", fontSize: '50px' }}>
                     {title}
                   </h2>
                   <div className="w-12 h-px bg-primary mb-8" />
