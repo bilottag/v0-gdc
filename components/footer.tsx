@@ -68,10 +68,10 @@ export default function Footer() {
           <div className="grid grid-rows-[1.25rem_1.5rem_1.5rem] gap-3 md:justify-self-end">
             <p className="font-sans text-base uppercase tracking-[0.3em] text-background/40">Follow</p>
             <div className="flex gap-6">
-              <a href="#" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="Instagram">
+              <a href="https://www.instagram.com/GiulianaDesignCo" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="Facebook">
+              <a href="https://www.facebook.com/GiulianaDesignCo" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="LinkedIn">
