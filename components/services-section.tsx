@@ -51,7 +51,8 @@ export default function ServicesSection() {
         <ServiceCard
           title={<>The Staged <span className="italic">Aesthetic</span></>}
           subtitle="Home Staging"
-          description="Preparing your property to captivate buyers from the moment they cross the threshold. We orchestrate every detail to accelerate your sale and maximize your return."
+          description="Preparing your property to captivate buyers from the moment they step inside. We orchestrate every detail to accelerate your sale and maximize your return."
+          expandedDescription="We transform your property into a buyer's must-have. Our meticulous preparation accelerates your timeline and maximizes your equity, turning a first impression into a closed deal."
           features={stagingFeatures}
           image={STAGING_IMG}
           imageAlt="Beautifully staged living room"
@@ -61,6 +62,7 @@ export default function ServicesSection() {
             title={<>The Curated <span className="italic">Life</span></>}
             subtitle="Interior Design"
             description="Reimagining the spaces where life happens. From a single room refresh to a complete home transformation, we design environments that resonate with who you are."
+            expandedDescription="Your home should feel like you. From tastefully curated room updates to total home makeovers, we handle the design so your space reflects exactly how you want to live."
             features={designFeatures}
             image={DESIGN_IMG}
             imageAlt="Elegant bedroom interior design"

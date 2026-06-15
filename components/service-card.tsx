@@ -14,13 +14,14 @@ interface ServiceCardProps {
   title: ReactNode
   subtitle: string
   description: string
+  expandedDescription?: string
   features: Feature[]
   image: string
   imageAlt: string
   flipped?: boolean
 }
 
-export default function ServiceCard({ title, subtitle, description, features, image, imageAlt, flipped }: ServiceCardProps) {
+export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped }: ServiceCardProps) {
   const [expanded, setExpanded] = useState(false)
 
   return (
@@ -103,7 +104,7 @@ export default function ServiceCard({ title, subtitle, description, features, im
                   </h2>
                   <div className="w-12 h-px bg-primary mb-8" />
                   <p className="font-sans text-lg text-muted-foreground leading-relaxed mb-12" style={{ fontSize: '20px' }}>
-                    {description}
+                    {expandedDescription ?? description}
                   </p>
 
                   <div className="space-y-4 mb-16">
