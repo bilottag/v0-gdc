@@ -62,6 +62,7 @@ export default function ServicesSection() {
             title={<>The Curated <span className="italic">Life</span></>}
             subtitle="Interior Design"
             description="Reimagining the spaces where life happens. From a single room refresh to a complete home transformation, we design environments that resonate with who you are."
+            expandedDescription="Your home should feel like you. From tastefully curated room updates to total home makeovers, we handle the design so your space reflects exactly how you want to live."
             features={designFeatures}
             image={DESIGN_IMG}
             imageAlt="Elegant bedroom interior design"
