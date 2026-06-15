@@ -28,7 +28,9 @@ export default function IntroSection() {
           className="font-sans text-4xl md:text-6xl lg:text-7xl font-light leading-tight text-foreground text-balance text-center mb-8"
           style={{ fontSize: '50px' }}
         >
-          Style that <em className="italic text-primary">Sells</em> Design that <em className="italic text-primary">Lasts</em>
+          Style that <em className="italic text-primary">Sells</em>
+          <br />
+          Design that <em className="italic text-primary">Lasts</em>
         </motion.h2>
 
         <motion.div
