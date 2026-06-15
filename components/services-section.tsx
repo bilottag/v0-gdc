@@ -51,7 +51,7 @@ export default function ServicesSection() {
         <ServiceCard
           title={<>The Staged <span className="italic">Aesthetic</span></>}
           subtitle="Home Staging"
-          description="Preparing your property to captivate buyers from the moment they cross the threshold. We orchestrate every detail to accelerate your sale and maximize your return."
+          description="Preparing your property to captivate buyers from the moment they step inside. We orchestrate every detail to accelerate your sale and maximize your return."
           expandedDescription="We transform your property into a buyer's must-have. Our meticulous preparation accelerates your timeline and maximizes your equity, turning a first impression into a closed deal."
           features={stagingFeatures}
           image={STAGING_IMG}
