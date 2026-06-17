@@ -76,7 +76,7 @@ export default function Navbar() {
             className={`h-auto transition-all duration-500 ${
               scrolled ? 'w-24 md:w-28' : 'w-32 md:w-40'
             }`}
-            style={{ boxShadow: '0 10px 20px -4px rgb(0 0 0 / 0.06), 0 4px 8px -2px rgb(0 0 0 / 0.05)' }}
+            style={{ boxShadow: '0 10px 20px -4px rgb(0 0 0 / 0.16), 0 4px 8px -2px rgb(0 0 0 / 0.14)' }}
             priority
           />
         </button>
