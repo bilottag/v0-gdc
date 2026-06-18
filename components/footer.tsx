@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo rising from the horizon */}
-        <div className="mt-8 overflow-hidden h-[14vw] md:h-[10.5vw]">
+        <div className="mt-8 overflow-hidden h-[15vw] md:h-[11.25vw]">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.28 }}
