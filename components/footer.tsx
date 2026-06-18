@@ -83,17 +83,13 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo rising from the horizon */}
-        <div className="mt-8 overflow-hidden">
+        <div className="mt-8 overflow-hidden" style={{ height: '0.62em' }}>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.28 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap translate-y-[18%]"
-            style={{
-              WebkitMaskImage: 'linear-gradient(to bottom, rgb(0 0 0) 30%, transparent 88%)',
-              maskImage: 'linear-gradient(to bottom, rgb(0 0 0) 30%, transparent 88%)',
-            }}
+            className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
           >
             GDC
           </motion.p>
