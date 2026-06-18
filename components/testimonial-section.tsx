@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 
 const testimonials = [
   {
-    quote: "Giuliana's team staged our home and it sold in 4 days — $47,000 over asking. The transformation was unbelievable.",
-    author: "Sarah & Michael R.",
-    context: "Home Staging · The Meridian Residence",
+    quote: "Giuliana is lovely to work with and definitely has an eye for design. She transformed our house into a beautiful, trendy home. We highly recommend Giuliana Design Co.",
+    author: "Alita and James M.",
+    context: "Home Staging Client",
   },
   {
     quote: "We'd lived with the same tired rooms for a decade. Walking into our redesigned home felt like stepping into someone else's dream — except it was finally ours.",

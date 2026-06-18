@@ -82,11 +82,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Oversized logo */}
-        <div className="mt-8">
+        {/* Oversized logo rising from the horizon */}
+        <div className="mt-8 overflow-hidden h-[15vw] md:h-[11.25vw]">
           <motion.p
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.15 }}
+            whileInView={{ opacity: 0.28 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
             className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
@@ -95,7 +95,7 @@ export default function Footer() {
           </motion.p>
         </div>
 
-        <div className="border-t border-background/10 pt-6 mt-6">
+        <div className="border-t border-background/10 pt-6">
           <p className="font-sans text-xs text-background/30">
             © {new Date().getFullYear()} Giuliana Design Co. All rights reserved.
           </p>
