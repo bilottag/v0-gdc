@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, ReactNode } from 'react'
+import { useState, useEffect, ReactNode } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, X } from 'lucide-react'
 import InquiryForm from './inquiry-form'
@@ -19,10 +19,21 @@ interface ServiceCardProps {
   image: string
   imageAlt: string
   flipped?: boolean
+  serviceKey?: string
 }
 
-export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped }: ServiceCardProps) {
+export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped, serviceKey }: ServiceCardProps) {
   const [expanded, setExpanded] = useState(false)
+
+  useEffect(() => {
+    if (!serviceKey) return
+    const handleOpen = (e: Event) => {
+      const detail = (e as CustomEvent<string>).detail
+      if (detail === serviceKey) setExpanded(true)
+    }
+    window.addEventListener('open-service', handleOpen)
+    return () => window.removeEventListener('open-service', handleOpen)
+  }, [serviceKey])
 
   return (
     <>
