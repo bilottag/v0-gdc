@@ -56,6 +56,7 @@ export default function ServicesSection() {
           features={stagingFeatures}
           image={STAGING_IMG}
           imageAlt="Beautifully staged living room"
+          serviceKey="staging"
         />
         <div className="md:mt-16">
           <ServiceCard
@@ -67,6 +68,7 @@ export default function ServicesSection() {
             image={DESIGN_IMG}
             imageAlt="Elegant bedroom interior design"
             flipped
+            serviceKey="design"
           />
         </div>
       </div>

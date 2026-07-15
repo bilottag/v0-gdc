@@ -9,8 +9,8 @@ const DESIGN_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6
 export default function DualityHero() {
   const [hovered, setHovered] = useState<'staging' | 'design' | null>(null)
 
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  const openService = (service: 'staging' | 'design') => {
+    window.dispatchEvent(new CustomEvent('open-service', { detail: service }))
   }
 
   return (
@@ -26,7 +26,7 @@ export default function DualityHero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           onMouseEnter={() => setHovered('staging')}
           onMouseLeave={() => setHovered(null)}
-          onClick={() => scrollTo('services')}
+          onClick={() => openService('staging')}
         >
           <div className="absolute inset-0">
             <img
@@ -78,7 +78,7 @@ export default function DualityHero() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           onMouseEnter={() => setHovered('design')}
           onMouseLeave={() => setHovered(null)}
-          onClick={() => scrollTo('services')}
+          onClick={() => openService('design')}
         >
           <div className="absolute inset-0">
             <img
