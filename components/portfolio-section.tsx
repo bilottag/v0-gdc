@@ -148,12 +148,9 @@ export default function PortfolioSection() {
               beforeAlt="Dated living room with brown leather furniture before staging"
               afterAlt="Bright, neutral living room after professional staging"
             />
-            <div className="mt-4 flex justify-between items-end">
-              <div>
-                <p className="font-serif text-xl text-foreground">Duchess Ave, Lucan</p>
-                <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
-              </div>
-              <p className="font-sans text-[11px] tracking-[0.2em] uppercase text-primary">Drag Slider to reveal</p>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">Duchess Ave, Lucan</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1 max-w-xs text-pretty">We softened the space with warm greige walls, layered a chunky wool rug over the hardwood, and styled it with a crisp white loveseat, a leather sling chair, and a leafy tree — turning a cold, empty room into a cozy spot to gather by the wood stove.</p>
             </div>
           </motion.div>
 
@@ -169,12 +166,9 @@ export default function PortfolioSection() {
               beforeAlt="Dated kitchen with striped wallpaper and gold hardware before renovation"
               afterAlt="Bright modern white kitchen after renovation"
             />
-            <div className="mt-4 flex justify-between items-end">
-              <div>
-                <p className="font-serif text-xl text-foreground">Ridgewood Cres, London</p>
-                <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Kitchen</p>
-              </div>
-              <p className="font-sans text-[11px] tracking-[0.2em] uppercase text-primary">Drag SLIDER to reveal</p>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">Ridgewood Cres, London</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1 max-w-xs text-pretty">A full refresh took this dated galley to bright and airy — crisp white shaker cabinets, quartz counters, a subway-tile backsplash, and stainless appliances, finished with a sunlit breakfast nook that makes the whole kitchen feel twice as big.</p>
             </div>
           </motion.div>
         </div>
