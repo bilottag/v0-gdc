@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import ServiceCard from './service-card'
 
-const STAGING_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/24923ab66_generated_6d132a60.png'
+const STAGING_IMG = '/portfolio/staged-living-room.jpeg'
 const DESIGN_IMG = '/portfolio/curated-life-bedroom.jpeg'
 
 const stagingFeatures = [
@@ -55,7 +55,7 @@ export default function ServicesSection() {
           expandedDescription="We transform your property into a buyer's must-have. Our meticulous preparation accelerates your timeline and maximizes your equity, turning a first impression into a closed deal."
           features={stagingFeatures}
           image={STAGING_IMG}
-          imageAlt="Beautifully staged living room"
+          imageAlt="Beautifully staged living room with neutral furnishings, gold-framed artwork, and city views"
           serviceKey="staging"
         />
         <div className="md:mt-16">
