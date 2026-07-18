@@ -9,17 +9,15 @@ const BEFORE_IMG = '/portfolio/duchess-lucan-living-before.jpeg'
 const AFTER_IMG = '/portfolio/duchess-lucan-living-after.jpg'
 const KITCHEN_BEFORE_IMG = '/portfolio/ridgewood-kitchen-before.jpeg'
 const KITCHEN_AFTER_IMG = '/portfolio/ridgewood-kitchen-after.jpeg'
-const KITCHEN_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/6adce29d4_generated_1bf5ccc2.png'
-const TEXTURE_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/9815c0777_generated_4a6c43c4.png'
-const DINING_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/fb421a4d8_generated_e204a7af.png'
-const BATHROOM_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/9404fc9fa_generated_daee69a4.png'
-
-// Additional project images
-const LIVING_ROOM_IMG = 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80'
-const BEDROOM_IMG = 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1200&q=80'
-const OFFICE_IMG = 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80'
-const PATIO_IMG = 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80'
-const ENTRYWAY_IMG = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80'
+// More Projects gallery images
+const MODERN_KITCHEN_IMG = '/portfolio/project-modern-kitchen.jpeg'
+const DINETTE_KITCHEN_IMG = '/portfolio/project-dinette-kitchen.jpeg'
+const DINING_IMG = '/portfolio/project-dining.jpeg'
+const SWALES_ENSUITE_IMG = '/portfolio/project-swales-ensuite.jpeg'
+const SERENITY_ENSUITE_IMG = '/portfolio/project-serenity-ensuite.jpg'
+const BRIGHT_LIVING_IMG = '/portfolio/project-bright-living.jpg'
+const OFFICE_IMG = '/portfolio/project-office.jpeg'
+const NURSERY_IMG = '/portfolio/project-nursery.jpeg'
 
 const AUTOSCROLL_INTERVAL = 2000 // 2 seconds between scrolls
 const SCROLL_AMOUNT_PERCENT = 0.4 // Scroll 40% of container width
@@ -240,7 +238,7 @@ export default function PortfolioSection() {
         className="overflow-x-auto horizontal-scroll"
       >
         <div className="flex gap-6 pl-6 md:pl-[4vw] pr-6 md:pr-[8vw] pb-8" style={{ width: 'max-content' }}>
-          {/* Kitchen panorama */}
+          {/* Dinette Kitchen */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -250,119 +248,77 @@ export default function PortfolioSection() {
           >
             <div className="aspect-[16/9] overflow-hidden">
               <img
-                src={KITCHEN_IMG}
-                alt="Modern kitchen with marble countertops and warm wood cabinetry"
+                src={DINETTE_KITCHEN_IMG}
+                alt="Open-concept kitchen and dinette with charcoal cabinetry, stainless appliances and a quartz island"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Harper Kitchen</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Kitchen</p>
+              <p className="font-serif text-xl text-foreground">Where Mornings Begin</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">An open-concept kitchen and dinette dressed in moody charcoal cabinetry, ready to gather around.</p>
             </div>
           </motion.div>
 
-          {/* Texture close-up */}
+          {/* Spacious Dining Room */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="w-[60vw] md:w-[28vw] flex-shrink-0"
-          >
-            <div className="aspect-square overflow-hidden">
-              <img
-                src={TEXTURE_IMG}
-                alt="Close-up of sage green velvet armchair texture with marble table"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">Material Study</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Velvet & Marble</p>
-            </div>
-          </motion.div>
-
-          {/* Dining */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
             className="w-[85vw] md:w-[42vw] flex-shrink-0"
           >
             <div className="aspect-[3/2] overflow-hidden">
               <img
                 src={DINING_IMG}
-                alt="Spacious dining room with oak table and modern chandelier"
+                alt="Elegant dining room with a navy feature wall, glass-top table, cream chairs and a crystal chandelier"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Ashwood Dining</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Dining Room</p>
+              <p className="font-serif text-xl text-foreground">Dinner Party Ready</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A moody navy feature wall and glittering chandelier set the stage for unforgettable evenings.</p>
             </div>
           </motion.div>
 
-          {/* Bathroom */}
+          {/* Swales Ave Ensuite */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="w-[70vw] md:w-[30vw] flex-shrink-0"
+          >
+            <div className="aspect-[4/5] overflow-hidden">
+              <img
+                src={SWALES_ENSUITE_IMG}
+                alt="Contemporary ensuite with a gray double vanity, granite counter, black fixtures and marble-tiled shower"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">A Private Escape</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Swales Ave, Strathroy — matte black fixtures and marble tile turn this ensuite into a daily retreat.</p>
+            </div>
+          </motion.div>
+
+          {/* Bright Living Room */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="w-[70vw] md:w-[30vw] flex-shrink-0"
-          >
-            <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={BATHROOM_IMG}
-                alt="Luxury bathroom with freestanding stone bathtub and warm wood vanity"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Stone Retreat</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Bathroom</p>
-            </div>
-          </motion.div>
-
-          {/* Living Room */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
             className="w-[85vw] md:w-[45vw] flex-shrink-0"
           >
             <div className="aspect-[16/10] overflow-hidden">
               <img
-                src={LIVING_ROOM_IMG}
-                alt="Modern living room with natural light and contemporary furniture"
+                src={BRIGHT_LIVING_IMG}
+                alt="Airy staged living room with plush white sofas, a brick gas fireplace and a large picture window"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Horizon Lounge</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
-            </div>
-          </motion.div>
-
-          {/* Bedroom */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="w-[75vw] md:w-[35vw] flex-shrink-0"
-          >
-            <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src={BEDROOM_IMG}
-                alt="Serene bedroom with minimalist design and soft textiles"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Serenity Suite</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Bedroom</p>
+              <p className="font-serif text-xl text-foreground">Light Pours In</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Plush white sofas and a crackling brick fireplace make this sun-drenched living room impossible to leave.</p>
             </div>
           </motion.div>
 
@@ -371,23 +327,65 @@ export default function PortfolioSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-[80vw] md:w-[40vw] flex-shrink-0"
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="w-[85vw] md:w-[50vw] flex-shrink-0"
           >
-            <div className="aspect-[3/2] overflow-hidden">
+            <div className="aspect-[16/9] overflow-hidden">
               <img
                 src={OFFICE_IMG}
-                alt="Elegant home office with natural wood desk and curated decor"
+                alt="Modern flex living and office space with a gray sectional, wall-mounted TV and a dual-monitor desk"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Executive Study</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Office</p>
+              <p className="font-serif text-xl text-foreground">Work Meets Unwind</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A sleek dual-monitor setup shares the room with a cozy sectional and forest views beyond.</p>
             </div>
           </motion.div>
 
-          {/* Patio */}
+          {/* Modern Kitchen */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="w-[80vw] md:w-[40vw] flex-shrink-0"
+          >
+            <div className="aspect-[3/2] overflow-hidden">
+              <img
+                src={MODERN_KITCHEN_IMG}
+                alt="Crisp white kitchen with a center island, upholstered bar stools, glass pendants and garden-door access"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">The Heart of the Home</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A crisp white island, soft-glow pendants and garden doors invite everyone to linger a little longer.</p>
+            </div>
+          </motion.div>
+
+          {/* Nursery */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="w-[65vw] md:w-[28vw] flex-shrink-0"
+          >
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src={NURSERY_IMG}
+                alt="Cozy nursery with a navy accent wall, white wainscoting, a white crib and a cream glider"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+            <div className="mt-4">
+              <p className="font-serif text-xl text-foreground">Sweet Dreams Await</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Deep navy walls and crisp white wainscoting wrap this little nursery in warmth and calm.</p>
+            </div>
+          </motion.div>
+
+          {/* Serenity Ensuite */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -397,35 +395,14 @@ export default function PortfolioSection() {
           >
             <div className="aspect-square overflow-hidden">
               <img
-                src={PATIO_IMG}
-                alt="Luxurious outdoor patio with comfortable seating and greenery"
+                src={SERENITY_ENSUITE_IMG}
+                alt="Spa-like ensuite with marble subway tile, a double white shaker vanity, chrome fixtures and a glass shower"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Garden Terrace</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Outdoor</p>
-            </div>
-          </motion.div>
-
-          {/* Entryway */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="w-[65vw] md:w-[28vw] flex-shrink-0"
-          >
-            <div className="aspect-[3/4] overflow-hidden">
-              <img
-                src={ENTRYWAY_IMG}
-                alt="Grand entryway with statement lighting and elegant finishes"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-            <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Grand Entry</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Entryway</p>
+              <p className="font-serif text-xl text-foreground">Spa Days, Every Day</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Marble subway tile and a double shaker vanity bring quiet, hotel-worthy luxury home.</p>
             </div>
           </motion.div>
 
