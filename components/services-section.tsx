@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import ServiceCard from './service-card'
 
 const STAGING_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/24923ab66_generated_6d132a60.png'
-const DESIGN_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/143398e91_generated_42d71334.png'
+const DESIGN_IMG = '/portfolio/curated-life-bedroom.jpeg'
 
 const stagingFeatures = [
   { title: 'Strategic Assessment', desc: 'We analyze your property through the lens of the ideal buyer, identifying every opportunity to maximize appeal.' },
