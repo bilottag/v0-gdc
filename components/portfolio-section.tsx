@@ -254,8 +254,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Dinette Kitchen</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Open-Concept Kitchen & Dining</p>
+              <p className="font-serif text-xl text-foreground">Where Mornings Begin</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">An open-concept kitchen and dinette dressed in moody charcoal cabinetry, ready to gather around.</p>
             </div>
           </motion.div>
 
@@ -275,8 +275,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Spacious Dining Room</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Dining Room</p>
+              <p className="font-serif text-xl text-foreground">Dinner Party Ready</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A moody navy feature wall and glittering chandelier set the stage for unforgettable evenings.</p>
             </div>
           </motion.div>
 
@@ -296,8 +296,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">Swales Ave, Strathroy</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Ensuite Bathroom</p>
+              <p className="font-serif text-xl text-foreground">A Private Escape</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Swales Ave, Strathroy — matte black fixtures and marble tile turn this ensuite into a daily retreat.</p>
             </div>
           </motion.div>
 
@@ -317,8 +317,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Bright Living Room</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
+              <p className="font-serif text-xl text-foreground">Light Pours In</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Plush white sofas and a crackling brick fireplace make this sun-drenched living room impossible to leave.</p>
             </div>
           </motion.div>
 
@@ -338,8 +338,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Flex Office</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Office & Lounge</p>
+              <p className="font-serif text-xl text-foreground">Work Meets Unwind</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A sleek dual-monitor setup shares the room with a cozy sectional and forest views beyond.</p>
             </div>
           </motion.div>
 
@@ -359,8 +359,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Modern Kitchen</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Kitchen</p>
+              <p className="font-serif text-xl text-foreground">The Heart of the Home</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A crisp white island, soft-glow pendants and garden doors invite everyone to linger a little longer.</p>
             </div>
           </motion.div>
 
@@ -380,8 +380,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Cozy Nursery</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Nursery</p>
+              <p className="font-serif text-xl text-foreground">Sweet Dreams Await</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Deep navy walls and crisp white wainscoting wrap this little nursery in warmth and calm.</p>
             </div>
           </motion.div>
 
@@ -401,8 +401,8 @@ export default function PortfolioSection() {
               />
             </div>
             <div className="mt-4">
-              <p className="font-serif text-xl text-foreground">The Serenity Ensuite</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Ensuite Bathroom</p>
+              <p className="font-serif text-xl text-foreground">Spa Days, Every Day</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Marble subway tile and a double shaker vanity bring quiet, hotel-worthy luxury home.</p>
             </div>
           </motion.div>
 
