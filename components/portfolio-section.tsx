@@ -155,7 +155,7 @@ export default function PortfolioSection() {
                 <p className="font-serif text-xl text-foreground">Duchess Ave, Lucan</p>
                 <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
               </div>
-              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag Slider to reveal</p>
+              <p className="font-sans text-[11px] tracking-[0.2em] uppercase text-primary">Drag Slider to reveal</p>
             </div>
           </motion.div>
 
@@ -176,7 +176,7 @@ export default function PortfolioSection() {
                 <p className="font-serif text-xl text-foreground">Ridgewood Cres, London</p>
                 <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Kitchen</p>
               </div>
-              <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
+              <p className="font-sans text-[11px] tracking-[0.2em] uppercase text-primary">Drag SLIDER to reveal</p>
             </div>
           </motion.div>
         </div>
