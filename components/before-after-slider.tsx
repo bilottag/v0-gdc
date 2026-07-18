@@ -44,6 +44,17 @@ export default function BeforeAfterSlider({ beforeImg, afterImg, beforeAlt, afte
         className="absolute inset-0 w-full h-full object-cover"
       />
 
+      {/* Drag hint (top center) */}
+      <div
+        className={`absolute top-4 left-1/2 -translate-x-1/2 z-20 transition-opacity duration-300 ${
+          Math.abs(position - 50) > 3 ? 'opacity-0' : 'opacity-100'
+        }`}
+      >
+        <span className="font-sans text-[11px] tracking-[0.2em] uppercase text-primary-foreground bg-primary/80 backdrop-blur-sm px-3 py-1.5 whitespace-nowrap">
+          Drag Slider to Reveal
+        </span>
+      </div>
+
       {/* Before image (clipped) */}
       <div
         className="absolute inset-0 overflow-hidden"
