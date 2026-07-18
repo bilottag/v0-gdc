@@ -7,6 +7,8 @@ import BeforeAfterSlider from './before-after-slider'
 
 const BEFORE_IMG = '/portfolio/duchess-lucan-living-before.jpeg'
 const AFTER_IMG = '/portfolio/duchess-lucan-living-after.jpg'
+const KITCHEN_BEFORE_IMG = '/portfolio/ridgewood-kitchen-before.jpeg'
+const KITCHEN_AFTER_IMG = '/portfolio/ridgewood-kitchen-after.jpeg'
 const KITCHEN_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/6adce29d4_generated_1bf5ccc2.png'
 const TEXTURE_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/9815c0777_generated_4a6c43c4.png'
 const DINING_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/fb421a4d8_generated_e204a7af.png'
@@ -164,14 +166,14 @@ export default function PortfolioSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <BeforeAfterSlider
-              beforeImg={KITCHEN_IMG}
-              afterImg={DINING_IMG}
-              beforeAlt="Kitchen before renovation"
-              afterAlt="Kitchen after renovation"
+              beforeImg={KITCHEN_BEFORE_IMG}
+              afterImg={KITCHEN_AFTER_IMG}
+              beforeAlt="Dated kitchen with striped wallpaper and gold hardware before renovation"
+              afterAlt="Bright modern white kitchen after renovation"
             />
             <div className="mt-4 flex justify-between items-end">
               <div>
-                <p className="font-serif text-xl text-foreground">The Harper Kitchen</p>
+                <p className="font-serif text-xl text-foreground">Ridgewood Cres</p>
                 <p className="font-sans text-sm text-muted-foreground mt-1">Interior Design · Kitchen</p>
               </div>
               <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
