@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react'
 import BeforeAfterSlider from './before-after-slider'
 
-const BEFORE_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/fcf9a41b0_generated_0abbced9.png'
-const AFTER_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/ada604251_generated_83f51ddf.png'
+const BEFORE_IMG = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Duchess%20Ave%20Lucan%20Living%20Room_Before.png-cCLwG2OKsGLv9PgRPGMckCyyjv41FD.jpeg'
+const AFTER_IMG = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Duchess%20Ave%20Lucan%20%20Living%20Room_AFTER-OfM9gXHSk6dM8v1R8vdLyIdsVDMnvb.jpg'
 const KITCHEN_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/6adce29d4_generated_1bf5ccc2.png'
 const TEXTURE_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/9815c0777_generated_4a6c43c4.png'
 const DINING_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/fb421a4d8_generated_e204a7af.png'
@@ -145,12 +145,12 @@ export default function PortfolioSection() {
             <BeforeAfterSlider
               beforeImg={BEFORE_IMG}
               afterImg={AFTER_IMG}
-              beforeAlt="Dated living room before staging"
-              afterAlt="Beautifully staged living room after transformation"
+              beforeAlt="Dated living room with brown leather furniture before staging"
+              afterAlt="Bright, neutral living room after professional staging"
             />
             <div className="mt-4 flex justify-between items-end">
               <div>
-                <p className="font-serif text-xl text-foreground">The Meridian Residence</p>
+                <p className="font-serif text-xl text-foreground">Duchess Ave, Lucan</p>
                 <p className="font-sans text-sm text-muted-foreground mt-1">Home Staging · Living Room</p>
               </div>
               <p className="font-sans text-xs tracking-[0.2em] uppercase text-primary">Drag to reveal</p>
