@@ -291,7 +291,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">A Private Escape</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Swales Ave, Strathroy — matte black fixtures and marble tile turn this ensuite into a daily retreat.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Modern matte black fixtures and marble tile turn this ensuite into a daily retreat.</p>
             </div>
           </motion.div>
 
