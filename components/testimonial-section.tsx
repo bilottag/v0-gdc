@@ -10,8 +10,8 @@ const testimonials = [
   },
   {
     quote: "Giuliana updated our tired, drab living area to something modern, bright and functional. She has an eye for color and style and was able to stay within our budget. We could not be happier!",
-    author: "Jennifer L.",
-    context: "Interior Design · Whole-Home Refresh",
+    author: "G.B.",
+    context: "Interior Design Client · Whole-Home Refresh",
   },
   {
     quote: "Every detail was considered. Every texture had intention. This is design at the highest level.",
