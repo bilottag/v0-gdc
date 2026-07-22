@@ -375,7 +375,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Sweet Dreams Await</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Deep navy walls and crisp white wainscoting wrap this little nursery in warmth and calm.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Deep navy walls and crisp white wainscoting wrap this charming nursery in warmth and calm.</p>
             </div>
           </motion.div>
 
