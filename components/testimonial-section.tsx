@@ -14,7 +14,7 @@ const testimonials = [
     context: "Interior Design Client · Whole-Home Refresh",
   },
   {
-    quote: "Every detail was considered. Every texture had intention. This is design at the highest level.",
+    quote: "As a Realtor, I need listings to make a lasting first impression, and Giuliana consistently delivers. Her attention to detail and thoughtful staging makes every home stand out. I would not use anyone else",
     author: "David & Anna K.",
     context: "Interior Design · Living & Dining",
   },
