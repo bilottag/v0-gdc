@@ -396,7 +396,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Spa Days, Every Day</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Marble subway tile and a double shaker vanity bring quiet, hotel-worthy luxury home.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Marble subway tile and a double shaker vanity bring quiet, spa-like luxury home.</p>
             </div>
           </motion.div>
 
