@@ -74,7 +74,7 @@ export default function Footer() {
               <a href="https://www.facebook.com/GiulianaDesignCo" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/giulianadesignco/" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-background transition-colors text-lg" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
