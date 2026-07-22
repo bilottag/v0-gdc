@@ -9,7 +9,7 @@ const testimonials = [
     context: "Home Staging Client",
   },
   {
-    quote: "We'd lived with the same tired rooms for a decade. Walking into our redesigned home felt like stepping into someone else's dream — except it was finally ours.",
+    quote: "Giuliana updated our tired, drab living area to something modern, bright and functional. She has an eye for color and style and was able to stay within our budget. We could not be happier!",
     author: "Jennifer L.",
     context: "Interior Design · Whole-Home Refresh",
   },
