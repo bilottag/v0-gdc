@@ -46,7 +46,7 @@ export default function TestimonialSection() {
               className={i === 1 ? 'md:mt-12' : ''}
             >
               <div className="w-8 h-px bg-primary mb-8" />
-              <p className="font-serif text-2xl md:text-2xl font-light text-foreground leading-relaxed italic mb-8">
+              <p className={`font-serif font-light text-foreground leading-relaxed italic mb-8 ${i === 0 ? 'text-xl' : 'text-2xl md:text-2xl'}`} style={i === 0 ? { fontSize: '22px' } : {}}>
                 &ldquo;{t.quote}&rdquo;
               </p>
               <p className="font-sans text-sm font-medium text-foreground">{t.author}</p>
