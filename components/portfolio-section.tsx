@@ -150,7 +150,7 @@ export default function PortfolioSection() {
             />
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Duchess Ave, Lucan</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1 max-w-xs text-pretty">We softened the space with warm greige walls, layered a chunky wool rug over the hardwood, and styled it with a crisp white loveseat, a leather sling chair, and a leafy tree — turning a cold, empty room into a cozy spot to gather by the wood stove.</p>
+              <p className="font-sans text-base text-muted-foreground mt-2 max-w-full text-pretty leading-relaxed">We softened the space with warm greige walls, layered a chunky wool rug over the hardwood, and styled it with a crisp white loveseat, a leather sling chair, and a leafy tree — turning a cold, empty room into a cozy spot to gather by the wood stove.</p>
             </div>
           </motion.div>
 
@@ -168,7 +168,7 @@ export default function PortfolioSection() {
             />
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Ridgewood Cres, London</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1 max-w-xs text-pretty">A full refresh took this dated galley to bright and airy — crisp white shaker cabinets, quartz counters, a subway-tile backsplash, and stainless appliances, finished with a sunlit breakfast nook that makes the whole kitchen feel twice as big.</p>
+              <p className="font-sans text-base text-muted-foreground mt-2 max-w-full text-pretty leading-relaxed">A full refresh took this dated galley to bright and airy — crisp white shaker cabinets, quartz counters, a subway-tile backsplash, and stainless appliances, finished with a sunlit breakfast nook that makes the whole kitchen feel twice as big.</p>
             </div>
           </motion.div>
         </div>
@@ -270,7 +270,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Dinner Party Ready</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">A moody navy feature wall and glittering chandelier set the stage for unforgettable evenings.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A dramatic navy feature wall and glittering chandelier set the stage for unforgettable evenings.</p>
             </div>
           </motion.div>
 
@@ -291,7 +291,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">A Private Escape</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Swales Ave, Strathroy — matte black fixtures and marble tile turn this ensuite into a daily retreat.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Modern matte black fixtures and marble tile turn this ensuite into a daily retreat.</p>
             </div>
           </motion.div>
 
@@ -333,7 +333,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Work Meets Unwind</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">A sleek dual-monitor setup shares the room with a cozy sectional and forest views beyond.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A sleek hybrid office setup shares the room with a cozy sectional to unwind on after a hard day's work.</p>
             </div>
           </motion.div>
 
@@ -396,7 +396,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Spa Days, Every Day</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Marble subway tile and a double shaker vanity bring quiet, hotel-worthy luxury home.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Marble subway tile and a double shaker vanity bring quiet, spa-like luxury home.</p>
             </div>
           </motion.div>
 

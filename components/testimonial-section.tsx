@@ -5,18 +5,18 @@ import { motion } from 'framer-motion'
 const testimonials = [
   {
     quote: "Giuliana is lovely to work with and definitely has an eye for design. She transformed our house into a beautiful, trendy home. We highly recommend Giuliana Design Co.",
-    author: "Alita and James M.",
+    author: "A.J.M.",
     context: "Home Staging Client",
   },
   {
-    quote: "We'd lived with the same tired rooms for a decade. Walking into our redesigned home felt like stepping into someone else's dream — except it was finally ours.",
-    author: "Jennifer L.",
-    context: "Interior Design · Whole-Home Refresh",
+    quote: "Giuliana updated our tired, drab living area to something modern, bright and functional. She has an eye for color and style and was able to stay within our budget. We could not be happier!",
+    author: "G.B.",
+    context: "Interior Design Client · Whole-Home Refresh",
   },
   {
-    quote: "Every detail was considered. Every texture had intention. This is design at the highest level.",
-    author: "David & Anna K.",
-    context: "Interior Design · Living & Dining",
+    quote: "As a Realtor, I need listings to make a lasting first impression, and Giuliana consistently delivers. Her attention to detail and thoughtful staging makes every home stand out. I would not use anyone else",
+    author: "B.B.H, Realtor",
+    context: "Interior Design & Home Staging Client",
   },
 ]
 
@@ -46,7 +46,7 @@ export default function TestimonialSection() {
               className={i === 1 ? 'md:mt-12' : ''}
             >
               <div className="w-8 h-px bg-primary mb-8" />
-              <p className="font-serif text-2xl md:text-2xl font-light text-foreground leading-relaxed italic mb-8">
+              <p className="font-serif font-light text-foreground leading-relaxed italic mb-8 text-xl" style={{ fontSize: '22px' }}>
                 &ldquo;{t.quote}&rdquo;
               </p>
               <p className="font-sans text-sm font-medium text-foreground">{t.author}</p>
