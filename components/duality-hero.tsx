@@ -85,13 +85,11 @@ export default function DualityHero() {
           <div className="absolute inset-0">
             <img
               src={DESIGN_IMG}
-              alt="Elegant bedroom with paneled accent wall, layered linen bedding, and warm pendant lighting"
+              alt="Elegant bedroom with paneled accent wall and layered linen bedding"
               className="w-full h-full object-cover"
-              style={{ filter: 'saturate(1.12) brightness(1.04)' }}
+              style={{ filter: 'brightness(0.88)' }}
             />
-            {/* Warm tonal overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#5a3a1e]/55 via-[#a06a35]/20 to-[#c98a4a]/10" />
-            <div className="absolute inset-0 bg-[#c9772e] mix-blend-soft-light opacity-30" />
+            <div className="absolute inset-0 bg-foreground/30" />
           </div>
           <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
             <motion.p
