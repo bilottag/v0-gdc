@@ -138,13 +138,20 @@ export default function PortfolioSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-2"
         >
-          <a
-            href="/giuliana-design-co-portfolio-summer-fall-2026.pdf"
-            download
-            className="font-sans text-base text-foreground hover:italic"
+          <p
+            className="font-sans text-lg font-semibold"
+            style={{ color: '#893c00', backgroundColor: 'rgba(245, 201, 156, 0.12)', padding: '4px 8px', display: 'inline-block', borderRadius: '4px' }}
           >
-            Download My Summer 2026 Portfolio <span className="underline">HERE</span>
-          </a>
+            Download Our Portfolio{' '}
+            <a
+              href="/giuliana-design-co-portfolio-summer-fall-2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:italic"
+            >
+              HERE
+            </a>
+          </p>
         </motion.div>
       </div>
 
