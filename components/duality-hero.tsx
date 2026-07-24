@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const STAGING_IMG = '/portfolio/staged-living-room.jpeg'
-const DESIGN_IMG = 'https://media.base44.com/images/public/69e82ef649477a9950ef6c22/143398e91_generated_42d71334.png'
+const DESIGN_IMG = '/portfolio/interior-design-bedroom.jpeg'
 
 export default function DualityHero() {
   const [hovered, setHovered] = useState<'staging' | 'design' | null>(null)
@@ -85,7 +85,7 @@ export default function DualityHero() {
           <div className="absolute inset-0">
             <img
               src={DESIGN_IMG}
-              alt="Elegant bedroom with bespoke walnut headboard and linen bedding"
+              alt="Elegant bedroom with paneled accent wall and layered linen bedding"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-foreground/30" />
