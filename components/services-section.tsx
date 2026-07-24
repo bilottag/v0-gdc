@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import ServiceCard from './service-card'
 
-const STAGING_IMG = '/portfolio/staged-aesthetic-living-room.jpeg'
+const STAGING_IMG = '/portfolio/home-staging-expertise.jpeg'
 const DESIGN_IMG = '/portfolio/curated-life-bedroom.jpeg'
 
 const stagingFeatures = [
