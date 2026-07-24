@@ -136,14 +136,14 @@ export default function PortfolioSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-6"
+          className="mt-2"
         >
           <a
             href="/giuliana-design-co-portfolio-summer-fall-2026.pdf"
             download
-            className="font-sans text-base text-foreground no-underline hover:underline"
+            className="font-sans text-base text-foreground hover:italic"
           >
-            Download My Summer 2026 Portfolio HERE
+            Download My Summer 2026 Portfolio <span className="underline">HERE</span>
           </a>
         </motion.div>
       </div>
