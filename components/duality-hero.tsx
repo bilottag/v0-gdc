@@ -87,7 +87,6 @@ export default function DualityHero() {
               src={DESIGN_IMG}
               alt="Elegant bedroom with paneled accent wall and layered linen bedding"
               className="w-full h-full object-cover"
-              style={{ filter: 'brightness(0.88)' }}
             />
             <div className="absolute inset-0 bg-foreground/30" />
           </div>
