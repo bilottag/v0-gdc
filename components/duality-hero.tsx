@@ -20,8 +20,9 @@ export default function DualityHero() {
         {/* Staging Side */}
         <motion.div
           className="relative h-full overflow-hidden cursor-pointer"
+          style={{ flexBasis: 0 }}
           animate={{
-            flex: hovered === 'staging' ? 1.6 : hovered === 'design' ? 0.6 : 1,
+            flexGrow: hovered === 'staging' ? 1.6 : hovered === 'design' ? 0.6 : 1,
           }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           onMouseEnter={() => setHovered('staging')}
@@ -72,8 +73,9 @@ export default function DualityHero() {
         {/* Design Side */}
         <motion.div
           className="relative h-full overflow-hidden cursor-pointer"
+          style={{ flexBasis: 0 }}
           animate={{
-            flex: hovered === 'design' ? 1.6 : hovered === 'staging' ? 0.6 : 1,
+            flexGrow: hovered === 'design' ? 1.6 : hovered === 'staging' ? 0.6 : 1,
           }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           onMouseEnter={() => setHovered('design')}
