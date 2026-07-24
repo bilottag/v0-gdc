@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const STAGING_IMG = '/portfolio/staged-living-room.jpeg'
-const DESIGN_IMG = '/portfolio/interior-design-living-room.jpeg'
+const DESIGN_IMG = '/portfolio/interior-design-bedroom.jpeg'
 
 export default function DualityHero() {
   const [hovered, setHovered] = useState<'staging' | 'design' | null>(null)
@@ -85,10 +85,13 @@ export default function DualityHero() {
           <div className="absolute inset-0">
             <img
               src={DESIGN_IMG}
-              alt="Elegant bedroom with bespoke walnut headboard and linen bedding"
+              alt="Elegant bedroom with paneled accent wall, layered linen bedding, and warm pendant lighting"
               className="w-full h-full object-cover"
+              style={{ filter: 'saturate(1.12) brightness(1.04)' }}
             />
-            <div className="absolute inset-0 bg-foreground/30" />
+            {/* Warm tonal overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#5a3a1e]/55 via-[#a06a35]/20 to-[#c98a4a]/10" />
+            <div className="absolute inset-0 bg-[#c9772e] mix-blend-soft-light opacity-30" />
           </div>
           <div className="relative z-10 flex flex-col justify-end items-end h-full p-8 md:p-16 pb-24 md:pb-32 text-right">
             <motion.p
