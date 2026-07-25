@@ -67,7 +67,7 @@ export default function InquiryForm({ serviceType = 'General', variant = 'light'
       </div>
       <Input
         type="tel"
-        placeholder="Phone Number"
+        placeholder="Phone Number *"
         value={form.phone}
         onChange={(e) => setForm({ ...form, phone: e.target.value })}
         className={inputClassName}
