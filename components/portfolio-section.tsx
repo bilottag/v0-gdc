@@ -148,6 +148,7 @@ export default function PortfolioSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:italic"
+              style={{ color: '#714938' }}
             >
               HERE
             </a>
