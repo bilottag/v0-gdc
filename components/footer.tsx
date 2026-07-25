@@ -101,7 +101,7 @@ export default function Footer() {
             whileInView={{ opacity: 0.8 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="h-[12vw] md:h-[9vw] w-auto object-contain shrink-0"
+            className="h-[12vw] md:h-[9vw] w-auto object-contain shrink-0 relative top-[2.5vw] md:top-[1.75vw]"
           />
         </div>
 
