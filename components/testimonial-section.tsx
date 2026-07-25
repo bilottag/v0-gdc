@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const testimonials = [
   {
     quote: "Giuliana is lovely to work with and definitely has an eye for design. She transformed our house into a beautiful, trendy home. We highly recommend Giuliana Design Co.",
-    author: "A.J.M.- ",
+    author: "A.J.M.",
     context: "Home Staging Client",
   },
   {
