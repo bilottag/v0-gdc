@@ -78,12 +78,20 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
-            <div></div>
+            <motion.img
+              src="/submark-seal.png"
+              alt="Giuliana Design Co. submark seal"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 0.1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="h-[15vw] md:h-[11.25vw] w-auto object-contain mt-8 md:justify-self-end"
+            />
           </div>
         </div>
 
         {/* Oversized logo rising from the horizon */}
-        <div className="mt-8 flex items-end justify-start gap-[2vw]">
+        <div className="mt-8 flex items-end justify-start">
           <div className="overflow-hidden h-[15vw] md:h-[11.25vw]">
             <motion.p
               initial={{ opacity: 0 }}
@@ -95,15 +103,6 @@ export default function Footer() {
               GDC
             </motion.p>
           </div>
-          <motion.img
-            src="/submark-seal.png"
-            alt="Giuliana Design Co. submark seal"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="h-[15vw] md:h-[11.25vw] w-auto object-contain relative bottom-[1.5vw]"
-          />
         </div>
 
         <div className="border-t border-background/10 pt-6">
