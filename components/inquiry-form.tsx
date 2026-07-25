@@ -78,6 +78,7 @@ export default function InquiryForm({ serviceType = 'General', variant = 'light'
         onChange={(e) => setForm({ ...form, message: e.target.value })}
         className={`${inputClassName} min-h-[120px] resize-none`}
       />
+      <p className={isDark ? "text-xs text-background/50" : "text-xs text-muted-foreground"}>* Required Information</p>
       <Button
         type="submit"
         disabled={sending}
