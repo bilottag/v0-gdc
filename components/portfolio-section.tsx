@@ -139,7 +139,7 @@ export default function PortfolioSection() {
           className="mt-2"
         >
           <p
-            className="font-sans text-[20px] font-semibold transition-[font-size] duration-200 hover:text-[22px]"
+            className="font-sans text-[20px] font-semibold"
             style={{ color: '#6e4738', backgroundColor: 'rgba(245, 201, 156, 0)', padding: '4px 8px', display: 'inline-block', borderRadius: '4px', borderColor: 'rgba(221, 214, 209, 0)' }}
           >
             Download Our Portfolio{' '}
@@ -147,7 +147,7 @@ export default function PortfolioSection() {
               href="/giuliana-design-co-portfolio-summer-fall-2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:italic"
+              className="underline hover:italic inline-block transition-[font-size] duration-200 hover:text-[22px]"
               style={{ color: '#5d3c2e', borderColor: 'rgba(221, 214, 209, 0)' }}
             >
               HERE
