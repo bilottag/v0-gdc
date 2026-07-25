@@ -83,16 +83,27 @@ export default function Footer() {
         </div>
 
         {/* Oversized logo rising from the horizon */}
-        <div className="mt-8 overflow-hidden h-[15vw] md:h-[11.25vw]">
-          <motion.p
+        <div className="mt-8 flex items-end justify-start gap-[2vw]">
+          <div className="overflow-hidden h-[15vw] md:h-[11.25vw]">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 0.28 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
+            >
+              GDC
+            </motion.p>
+          </div>
+          <motion.img
+            src="/submark-seal.png"
+            alt="Giuliana Design Co. submark seal"
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.28 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="font-serif text-[20vw] md:text-[15vw] font-light text-white leading-none tracking-tight whitespace-nowrap"
-          >
-            GDC
-          </motion.p>
+            className="h-[15vw] md:h-[11.25vw] w-auto object-contain relative bottom-[1.5vw]"
+          />
         </div>
 
         <div className="border-t border-background/10 pt-6">
