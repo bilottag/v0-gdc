@@ -147,7 +147,7 @@ export default function PortfolioSection() {
               href="/giuliana-design-co-portfolio-summer-fall-2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:italic"
+              className="underline"
               style={{ color: '#5d3c2e', borderColor: 'rgba(221, 214, 209, 0)' }}
             >
               HERE
