@@ -123,6 +123,7 @@ export default function RealtorsSection() {
                     onChange={(e) => setForm({ ...form, firm: e.target.value })}
                     className={inputClassName}
                   />
+                  <p className="text-xs text-muted-foreground">* Required Information</p>
                   <Button
                     type="submit"
                     disabled={sending}
