@@ -4,6 +4,7 @@ import IntroSection from '@/components/intro-section'
 import PortfolioSection from '@/components/portfolio-section'
 import ServicesSection from '@/components/services-section'
 import TestimonialSection from '@/components/testimonial-section'
+import RealtorsSection from '@/components/realtors-section'
 import Footer from '@/components/footer'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <ServicesSection />
       <TestimonialSection />
       <Footer />
+      <RealtorsSection />
     </main>
   )
 }
