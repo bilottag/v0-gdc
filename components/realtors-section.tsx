@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { toast } from 'sonner'
 
-const REALTOR_IMG = '/images/realtors-family-room.jpg'
+const REALTOR_IMG = '/images/realtors-family-room.jpeg'
 
 export default function RealtorsSection() {
   const [open, setOpen] = useState(false)
