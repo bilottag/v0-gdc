@@ -58,6 +58,7 @@ export default function ServicesSection() {
           imageAlt="Beautifully staged living room with neutral furnishings, gold-framed artwork, and city views"
           serviceKey="staging"
           imageOpacity={0.8}
+          descriptionBoxShadow={true}
         />
         <div className="md:mt-16">
           <ServiceCard

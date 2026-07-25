@@ -21,9 +21,10 @@ interface ServiceCardProps {
   flipped?: boolean
   serviceKey?: string
   imageOpacity?: number
+  descriptionBoxShadow?: boolean
 }
 
-export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped, serviceKey, imageOpacity }: ServiceCardProps) {
+export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped, serviceKey, imageOpacity, descriptionBoxShadow }: ServiceCardProps) {
   const [expanded, setExpanded] = useState(false)
 
   useEffect(() => {
@@ -62,7 +63,13 @@ export default function ServiceCard({ title, subtitle, description, expandedDesc
             <h3 className="text-5xl md:text-5xl font-thin text-white leading-tight mb-4" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
               {title}
             </h3>
-            <p className={`font-sans text-base text-white/70 max-w-sm leading-relaxed mb-6 ${flipped ? 'ml-auto' : ''}`}>
+            <p 
+              className={`font-sans text-base text-white/70 max-w-sm leading-relaxed mb-6 ${flipped ? 'ml-auto' : ''}`}
+              style={{
+                fontWeight: 500,
+                ...(descriptionBoxShadow && { boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)' })
+              }}
+            >
               {description}
             </p>
             <div className={`flex items-center gap-3 ${flipped ? 'justify-end' : ''}`}>
