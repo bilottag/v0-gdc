@@ -119,7 +119,7 @@ export default function PortfolioSection() {
           className="font-candara text-xl tracking-[0.4em] uppercase text-muted-foreground mb-4"
           style={{ fontSize: '20px', fontWeight: '600' }}
         >
-          The Spatial Chronicle
+          See The Difference
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
