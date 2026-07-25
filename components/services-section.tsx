@@ -57,6 +57,8 @@ export default function ServicesSection() {
           image={STAGING_IMG}
           imageAlt="Beautifully staged living room with neutral furnishings, gold-framed artwork, and city views"
           serviceKey="staging"
+          imageOpacity={0.8}
+          descriptionBoxShadow={true}
         />
         <div className="md:mt-16">
           <ServiceCard
@@ -69,6 +71,7 @@ export default function ServicesSection() {
             imageAlt="Elegant bedroom interior design"
             flipped
             serviceKey="design"
+            imageOpacity={0.8}
           />
         </div>
       </div>

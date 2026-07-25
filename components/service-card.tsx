@@ -20,9 +20,11 @@ interface ServiceCardProps {
   imageAlt: string
   flipped?: boolean
   serviceKey?: string
+  imageOpacity?: number
+  descriptionBoxShadow?: boolean
 }
 
-export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped, serviceKey }: ServiceCardProps) {
+export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped, serviceKey, imageOpacity, descriptionBoxShadow }: ServiceCardProps) {
   const [expanded, setExpanded] = useState(false)
 
   useEffect(() => {
@@ -50,17 +52,24 @@ export default function ServiceCard({ title, subtitle, description, expandedDesc
             src={image}
             alt={imageAlt}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            style={imageOpacity !== undefined ? { opacity: imageOpacity } : undefined}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
 
           <div className={`absolute bottom-0 left-0 right-0 p-8 md:p-12 ${flipped ? 'text-right' : ''}`}>
-            <p className="font-sans text-xl font-black tracking-[0.4em] uppercase text-white/60 mb-3">
+            <p className="font-sans text-xl font-black tracking-[0.4em] uppercase text-white/70 mb-3">
               {subtitle}
             </p>
             <h3 className="text-5xl md:text-5xl font-thin text-white leading-tight mb-4" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
               {title}
             </h3>
-            <p className={`font-sans text-base text-white/70 max-w-sm leading-relaxed mb-6 ${flipped ? 'ml-auto' : ''}`}>
+            <p 
+              className={`font-sans text-base text-white/70 max-w-sm leading-relaxed mb-6 ${flipped ? 'ml-auto' : ''}`}
+              style={{
+                fontWeight: 500,
+                ...(descriptionBoxShadow && { boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)' })
+              }}
+            >
               {description}
             </p>
             <div className={`flex items-center gap-3 ${flipped ? 'justify-end' : ''}`}>
