@@ -20,9 +20,10 @@ interface ServiceCardProps {
   imageAlt: string
   flipped?: boolean
   serviceKey?: string
+  imageOpacity?: number
 }
 
-export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped, serviceKey }: ServiceCardProps) {
+export default function ServiceCard({ title, subtitle, description, expandedDescription, features, image, imageAlt, flipped, serviceKey, imageOpacity }: ServiceCardProps) {
   const [expanded, setExpanded] = useState(false)
 
   useEffect(() => {
@@ -50,6 +51,7 @@ export default function ServiceCard({ title, subtitle, description, expandedDesc
             src={image}
             alt={imageAlt}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            style={imageOpacity !== undefined ? { opacity: imageOpacity } : undefined}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
 
