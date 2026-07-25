@@ -14,7 +14,7 @@ const testimonials = [
     context: "Interior Design Client · Whole-Home Refresh",
   },
   {
-    quote: "As a Realtor, I need listings to make a lasting first impression, and Giuliana consistently delivers. Her attention to detail and thoughtful staging makes every home stand out. I would not use anyone else",
+    quote: "As a Realtor, I need listings to make a lasting first impression, and Giuliana consistently delivers. Her attention to detail and thoughtful staging makes every home stand out. I would not use anyone else.",
     author: "B.B.H, Realtor",
     context: "Interior Design & Home Staging Client",
   },
