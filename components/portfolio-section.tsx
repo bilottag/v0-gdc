@@ -7,7 +7,7 @@ import BeforeAfterSlider from './before-after-slider'
 
 const BEFORE_IMG = '/portfolio/duchess-lucan-living-before.jpeg'
 const AFTER_IMG = '/portfolio/duchess-lucan-living-after.jpg'
-const KITCHEN_BEFORE_IMG = '/portfolio/ridgewood-kitchen-before.jpeg'
+const KITCHEN_BEFORE_IMG = '/portfolio/ridgewood-kitchen-before.jpeg?v=2'
 const KITCHEN_AFTER_IMG = '/portfolio/ridgewood-kitchen-after.jpeg'
 // More Projects gallery images
 const MODERN_KITCHEN_IMG = '/portfolio/project-modern-kitchen.jpeg'
