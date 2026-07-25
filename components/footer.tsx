@@ -98,10 +98,10 @@ export default function Footer() {
             src="/submark-seal.png"
             alt="Giuliana Design Co. submark seal"
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.9 }}
+            whileInView={{ opacity: 0.8 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="h-[15vw] md:h-[11.25vw] w-auto object-contain shrink-0"
+            className="h-[12vw] md:h-[9vw] w-auto object-contain shrink-0"
           />
         </div>
 
