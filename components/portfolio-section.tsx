@@ -140,7 +140,7 @@ export default function PortfolioSection() {
         >
           <p
             className="font-sans text-lg font-semibold"
-            style={{ color: '#893c00', backgroundColor: 'rgba(245, 201, 156, 0.12)', padding: '4px 8px', display: 'inline-block', borderRadius: '4px' }}
+            style={{ color: '#6e4738', backgroundColor: 'rgba(245, 201, 156, 0)', padding: '4px 8px', display: 'inline-block', borderRadius: '4px', borderColor: 'rgba(221, 214, 209, 0)' }}
           >
             Download Our Portfolio{' '}
             <a
@@ -148,7 +148,7 @@ export default function PortfolioSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:italic"
-              style={{ color: '#714938', borderColor: 'rgba(221, 214, 209, 0)' }}
+              style={{ color: '#5d3c2e', borderColor: 'rgba(221, 214, 209, 0)' }}
             >
               HERE
             </a>
