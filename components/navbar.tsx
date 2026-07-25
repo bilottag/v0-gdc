@@ -23,9 +23,23 @@ export default function Navbar() {
     }, 100)
   }
 
-  const links = [
+  const openRealtors = () => {
+    setMenuOpen(false)
+    window.dispatchEvent(new CustomEvent('open-realtors'))
+  }
+
+  const handleLink = (link: { label: string; id?: string; action?: 'realtors' }) => {
+    if (link.action === 'realtors') {
+      openRealtors()
+    } else if (link.id) {
+      scrollTo(link.id)
+    }
+  }
+
+  const links: { label: string; id?: string; action?: 'realtors' }[] = [
     { label: 'Portfolio', id: 'portfolio' },
     { label: 'Services', id: 'services' },
+    { label: 'Realtors', action: 'realtors' },
     { label: 'Contact', id: 'contact' },
   ]
 
@@ -47,8 +61,8 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10">
           {links.map((link) => (
             <button
-              key={link.id}
-              onClick={() => scrollTo(link.id)}
+              key={link.label}
+              onClick={() => handleLink(link)}
               className={`font-corbel text-xl font-bold tracking-widest uppercase transition-all duration-300 hover:text-[22px] ${
                 scrolled 
                   ? 'text-muted-foreground hover:text-amber-950 hover:scale-105' 
@@ -117,8 +131,8 @@ export default function Navbar() {
             <div className="flex flex-col items-center gap-6 py-8">
               {links.map((link) => (
                 <button
-                  key={link.id}
-                  onClick={() => scrollTo(link.id)}
+                  key={link.label}
+                  onClick={() => handleLink(link)}
                   className="font-sans text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {link.label}
