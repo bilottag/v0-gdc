@@ -56,7 +56,7 @@ export default function ServiceCard({ title, subtitle, description, expandedDesc
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
 
           <div className={`absolute bottom-0 left-0 right-0 p-8 md:p-12 ${flipped ? 'text-right' : ''}`}>
-            <p className="font-sans text-xl font-black tracking-[0.4em] uppercase text-white/60 mb-3">
+            <p className="font-sans text-xl font-black tracking-[0.4em] uppercase text-white/70 mb-3">
               {subtitle}
             </p>
             <h3 className="text-5xl md:text-5xl font-thin text-white leading-tight mb-4" style={{ fontFamily: "'Corbel', 'Lucida Grande', sans-serif" }}>
