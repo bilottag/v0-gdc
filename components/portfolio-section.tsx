@@ -139,7 +139,7 @@ export default function PortfolioSection() {
           className="mt-2"
         >
           <p
-            className="font-sans text-lg font-semibold"
+            className="font-sans text-lg font-semibold transition-[font-size] duration-200 hover:text-[22px]"
             style={{ color: '#6e4738', backgroundColor: 'rgba(245, 201, 156, 0)', padding: '4px 8px', display: 'inline-block', borderRadius: '4px', borderColor: 'rgba(221, 214, 209, 0)' }}
           >
             Download Our Portfolio{' '}
