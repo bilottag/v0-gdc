@@ -118,7 +118,7 @@ export default function RealtorsSection() {
                     className={inputClassName}
                   />
                   <Input
-                    placeholder="Realty/Brokerage Firm (Optional)"
+                    placeholder="Realty/Brokerage Firm"
                     value={form.firm}
                     onChange={(e) => setForm({ ...form, firm: e.target.value })}
                     className={inputClassName}
