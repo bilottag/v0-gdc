@@ -148,7 +148,7 @@ export default function PortfolioSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:italic"
-              style={{ color: '#714938' }}
+              style={{ color: '#714938', borderColor: 'rgba(221, 214, 209, 0)' }}
             >
               HERE
             </a>
