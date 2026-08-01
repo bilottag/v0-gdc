@@ -83,12 +83,11 @@ export default function RealtorsSection() {
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="w-full"
               >
-                <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4" style={{ fontSize: '24px', fontWeight: '600' }}>
+                <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4" style={{ fontSize: '26px', fontWeight: '600' }}>
                   Realtor Partnerships
                 </p>
                 <p className="font-sans text-muted-foreground mb-4" style={{ fontSize: '20px' }}>
-                  <span style={{ fontWeight: '700' }}>Thoughtfully Staged</span>
-                  {' '}
+                  <span style={{ fontWeight: '700' }}>Thoughtfully Staged,   </span>
                   <span style={{ fontWeight: '700', fontStyle: 'italic' }}>Successfully Sold!</span>
                 </p>
                 <div className="w-12 h-px bg-primary mb-6" />
