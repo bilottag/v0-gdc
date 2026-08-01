@@ -100,7 +100,10 @@ export default function RealtorsSection() {
                       <span style={{ fontWeight: '700', fontStyle: 'normal' }}>Giuliana Design Co.</span>
                       {' '}comes in!
                     </span>
-                    {' '}As your staging partner, we help create homes buyers remember while making the process simple for you and your clients. So, are you ready to elevate your next listing?
+                    <br />
+                    As your staging partner, we help create homes buyers remember while making the process simple for you and your clients.
+                    <br />
+                    So, are you ready to elevate your next listing?
                   </div>
                 </p>
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '15px' }}>
