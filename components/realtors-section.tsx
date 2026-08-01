@@ -11,7 +11,7 @@ const REALTOR_IMG = '/images/realtors-family-room.jpeg'
 
 export default function RealtorsSection() {
   const [open, setOpen] = useState(false)
-  const [form, setForm] = useState({ name: '', email: '', phone: '', firm: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', firm: '', needs: '' })
   const [sending, setSending] = useState(false)
 
   useEffect(() => {
@@ -37,13 +37,14 @@ export default function RealtorsSection() {
       `Email: ${form.email}`,
       `Phone: ${form.phone}`,
       `Realty/Brokerage Firm: ${form.firm || 'N/A'}`,
+      `Listings and/or Staging Needs: ${form.needs || 'N/A'}`,
     ].join('\n')
 
     const mailtoUrl = `mailto:GiulianaDesignCo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     window.location.href = mailtoUrl
 
     toast.success('Opening your email app to send the inquiry...')
-    setForm({ name: '', email: '', phone: '', firm: '' })
+    setForm({ name: '', email: '', phone: '', firm: '', needs: '' })
     setSending(false)
   }
 
@@ -142,6 +143,13 @@ export default function RealtorsSection() {
                     value={form.firm}
                     onChange={(e) => setForm({ ...form, firm: e.target.value })}
                     className={inputClassName}
+                  />
+                  <textarea
+                    placeholder="Tell us about your Listings and/or Staging Needs"
+                    value={form.needs}
+                    onChange={(e) => setForm({ ...form, needs: e.target.value })}
+                    rows={2}
+                    className="w-full resize-none bg-transparent border-0 border-b border-border focus:border-primary rounded-none px-0 py-3 font-sans text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                   />
                   <p className="text-xs text-muted-foreground">* Required Information</p>
                   <Button
