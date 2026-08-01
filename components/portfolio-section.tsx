@@ -356,7 +356,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Work Meets Unwind</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">A sleek hybrid office setup shares the room with a cozy sectional to unwind on after a hard day's work.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">A sleek hybrid office setup shares the room with a cozy sectional to unwind on after a hard day of work.</p>
             </div>
           </motion.div>
 
@@ -398,7 +398,7 @@ export default function PortfolioSection() {
             </div>
             <div className="mt-4">
               <p className="font-serif text-xl text-foreground">Sweet Dreams Await</p>
-              <p className="font-sans text-sm text-muted-foreground mt-1">Deep navy walls and crisp white wainscoting wrap this charming nursery in warmth and calm.</p>
+              <p className="font-sans text-sm text-muted-foreground mt-1">Deep navy walls and crisp white wainscotting wrap this charming nursery in warmth and calm.</p>
             </div>
           </motion.div>
 
