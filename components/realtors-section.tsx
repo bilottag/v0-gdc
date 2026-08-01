@@ -108,7 +108,7 @@ export default function RealtorsSection() {
                     So, are you ready to elevate your next listing?
                   </div>
                 </p>
-                <p className="font-sans mb-6" style={{ fontSize: '25px', fontWeight: '500', color: '#000000' }}>
+                <p className="font-sans mb-6" style={{ fontSize: '30px', fontWeight: '500', color: '#000000' }}>
                   Join our Special <span style={{ fontStyle: 'italic' }}>Realtor Loyalty Member Club</span> Program !
                 </p>
                 <p className="font-sans text-sm mb-10" style={{ fontSize: '17px', color: 'lab(5.25001 1.38035 2.33883)' }}>
