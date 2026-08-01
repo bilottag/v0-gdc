@@ -106,11 +106,11 @@ export default function RealtorsSection() {
                   </div>
                 </p>
                 <div className="border-t border-border pt-12">
-                  <p className="font-sans mb-6" style={{ fontSize: '26px', fontWeight: '300', color: '#000000' }}>
+                  <p className="font-sans mb-6" style={{ fontSize: '28px', fontWeight: '300', color: '#000000' }}>
                     Join our Special <span style={{ fontStyle: 'italic' }}>Realtor Loyalty Member Club</span> Program !
                   </p>
                 </div>
-                <p className="font-sans text-sm mb-10" style={{ fontSize: '17px', color: 'lab(5.25001 1.38035 2.33883)' }}>
+                <p className="font-sans text-sm mb-10" style={{ fontSize: '17px', color: 'lab(41.9561 3.51177 6.75876)' }}>
                   Sign Up Below to Learn More AND for Special Realtor Offers and Discounts
                 </p>
 
