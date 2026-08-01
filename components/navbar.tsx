@@ -39,8 +39,6 @@ export default function Navbar() {
   const links: { label: string; id?: string; action?: 'realtors' }[] = [
     { label: 'Portfolio', id: 'portfolio' },
     { label: 'Services', id: 'services' },
-    { label: 'Realtors', action: 'realtors' },
-    { label: 'Contact', id: 'contact' },
   ]
 
   return (
@@ -98,6 +96,17 @@ export default function Navbar() {
         {/* Right nav links */}
         <div className="hidden md:flex items-center gap-10">
           <button
+            onClick={openRealtors}
+            className={`font-corbel text-xl font-bold tracking-widest uppercase transition-all duration-300 hover:text-[22px] ${
+              scrolled 
+                ? 'text-muted-foreground hover:text-amber-950 hover:scale-105' 
+                : 'text-white hover:text-yellow-950 hover:scale-105'
+            }`}
+            style={{ textShadow: scrolled ? 'none' : '0 1px 2px rgba(0,0,0,0.3)' }}
+          >
+            Realtors
+          </button>
+          <button
             onClick={() => scrollTo('contact')}
             className={`font-corbel text-xl font-bold tracking-widest uppercase border px-6 py-2.5 transition-all duration-300 hover:text-[22px] ${
               scrolled 
@@ -106,7 +115,7 @@ export default function Navbar() {
             }`}
             style={{ textShadow: scrolled ? 'none' : '0 1px 2px rgba(0,0,0,0.3)' }}
           >
-            Inquire
+            Contact
           </button>
         </div>
 
@@ -139,10 +148,16 @@ export default function Navbar() {
                 </button>
               ))}
               <button
+                onClick={openRealtors}
+                className="font-sans text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Realtors
+              </button>
+              <button
                 onClick={() => scrollTo('contact')}
                 className="font-sans text-sm tracking-widest uppercase border border-primary text-primary px-6 py-2.5 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
-                Inquire
+                Contact
               </button>
             </div>
           </motion.div>

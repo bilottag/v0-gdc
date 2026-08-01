@@ -83,8 +83,12 @@ export default function RealtorsSection() {
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="w-full"
               >
-                <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4" style={{ fontSize: '24px', fontWeight: '600' }}>
+                <p className="font-sans text-xs tracking-[0.4em] uppercase text-muted-foreground mb-4" style={{ fontSize: '26px', fontWeight: '600' }}>
                   Realtor Partnerships
+                </p>
+                <p className="font-sans text-muted-foreground mb-4" style={{ fontSize: '20px' }}>
+                  <span style={{ fontWeight: '700' }}>Thoughtfully Staged,   </span>
+                  <span style={{ fontWeight: '700', fontStyle: 'italic' }}>Successfully Sold!</span>
                 </p>
                 <div className="w-12 h-px bg-primary mb-6" />
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '16px', lineHeight: '1.6' }}>
@@ -95,11 +99,14 @@ export default function RealtorsSection() {
                       <span style={{ fontWeight: '700', fontStyle: 'normal' }}>Giuliana Design Co.</span>
                       {' '}comes in!
                     </span>
-                    {' '}As your staging partner, we help create homes buyers remember while making the process simple for you and your clients. So, are you ready to elevate your next listing?
+                    <br />
+                    As your staging partner, we help create homes buyers remember while making the process simple for you and your clients.
+                    <br />
+                    So, are you ready to elevate your next listing?
                   </div>
                 </p>
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '15px' }}>
-                  Sign Up Below for Special Realtor Offers and Discounts
+                  Sign Up Below to Learn More AND for Special Realtor Offers and Discounts
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
