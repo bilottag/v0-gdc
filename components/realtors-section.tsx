@@ -94,9 +94,9 @@ export default function RealtorsSection() {
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '16px', lineHeight: '1.6' }}>
                   Beautifully staged homes attract attention, photograph better, and help buyers emotionally connect from the moment they walk through the door. Your clients trust you to recommend professionals who care as much about their home as you do.
                   <div>
-                    <span style={{ fontWeight: '700', fontStyle: 'italic' }}>
+                    <span style={{ fontWeight: '700', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>
                       That&apos;s where{' '}
-                      <span style={{ fontWeight: '700', fontStyle: 'normal' }}>Giuliana Design Co.</span>
+                      <span style={{ fontWeight: '700', fontStyle: 'normal', color: 'rgb(113, 73, 56)' }}>Giuliana Design Co.</span>
                       {' '}comes in!
                     </span>
                     <br />
