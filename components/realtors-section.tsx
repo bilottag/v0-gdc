@@ -148,8 +148,7 @@ export default function RealtorsSection() {
                     placeholder="Tell us about your Listings and/or Staging Needs"
                     value={form.needs}
                     onChange={(e) => setForm({ ...form, needs: e.target.value })}
-                    rows={2}
-                    className="w-full resize-none bg-transparent border-0 border-b border-border focus:border-primary rounded-none px-0 py-3 font-sans text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+                    className="w-full min-h-[120px] resize-none bg-transparent border-0 border-b border-border focus:border-primary rounded-none px-0 py-3 font-sans text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                   />
                   <p className="text-xs text-muted-foreground">* Required Information</p>
                   <Button
