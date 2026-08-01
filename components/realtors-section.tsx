@@ -88,7 +88,7 @@ export default function RealtorsSection() {
                 </p>
                 <p className="font-sans text-muted-foreground mb-4">
                   <span style={{ fontSize: '50px', fontWeight: '500', color: 'lab(5.25001 1.38035 2.33883)' }}>Thoughtfully Staged,   </span>
-                  <span style={{ fontSize: '50px', fontWeight: '500', fontStyle: 'italic', color: 'rgb(113, 73, 56)' }}>Successfully Sold!</span>
+                  <span style={{ fontSize: '50px', fontWeight: '500', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>Successfully Sold!</span>
                 </p>
                 <div className="w-12 h-px bg-primary mb-6" />
                 <p className="font-sans mb-6" style={{ fontSize: '22px', fontWeight: '500', color: '#000000' }}>
