@@ -106,7 +106,7 @@ export default function RealtorsSection() {
                   </div>
                 </p>
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '15px' }}>
-                  Sign Up Below for Special Realtor Offers and Discounts
+                  Sign Up Below to Learn More AND for Special Realtor Offers and Discounts
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-5">
