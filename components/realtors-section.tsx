@@ -91,7 +91,7 @@ export default function RealtorsSection() {
                   <span style={{ fontSize: '46px', fontWeight: '500', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>Successfully Sold!</span>
                 </p>
                 <div className="w-12 h-px bg-primary mb-6" />
-                <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '18px', lineHeight: '1.6' }}>
+                <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '20px', fontWeight: '300', lineHeight: '1.6' }}>
                   Beautifully staged homes attract attention, photograph better, and help buyers emotionally connect from the moment they walk through the door. Your clients trust you to recommend professionals who care as much about their home as you do.
                   <div>
                     <span style={{ fontWeight: '700', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>
