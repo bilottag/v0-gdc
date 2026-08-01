@@ -90,10 +90,7 @@ export default function RealtorsSection() {
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '16px', lineHeight: '1.6' }}>
                   Beautifully staged homes attract attention, photograph better, and help buyers emotionally connect from the moment they walk through the door. Your clients trust you to recommend professionals who care as much about their home as you do.
                   <div style={{ fontWeight: '700' }}>
-                    That&apos;s where Giuliana Design Co. comes in!   As your staging partner, we help create homes buyers remember while making the process simple for you and your clients. So, are you ready to elevate your next listing?
-                    <div style={{ fontWeight: '400' }}>
-                       As your staging partner, we help create homes buyers remember while making the process simple for you and your clients. So, are you ready to elevate your next listing?
-                    </div>
+                    That&apos;s where Giuliana Design Co. comes in! As your staging partner, we help create homes buyers remember while making the process simple for you and your clients. So, are you ready to elevate your next listing?
                   </div>
                 </p>
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '15px' }}>
