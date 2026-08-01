@@ -91,7 +91,7 @@ export default function RealtorsSection() {
                   <span style={{ fontSize: '50px', fontWeight: '500', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>Successfully Sold!</span>
                 </p>
                 <div className="w-12 h-px bg-primary mb-6" />
-                <p className="font-sans mb-6" style={{ fontSize: '22px', fontWeight: '500', color: '#000000' }}>
+                <p className="font-sans mb-6" style={{ fontSize: '25px', fontWeight: '500', color: '#000000' }}>
                   Join our Special <span style={{ fontStyle: 'italic' }}>Realtor Loyalty Member Club</span> Program !
                 </p>
                 <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '18px', lineHeight: '1.6' }}>
