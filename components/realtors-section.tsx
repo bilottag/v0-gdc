@@ -11,7 +11,7 @@ const REALTOR_IMG = '/images/realtors-family-room.jpeg'
 
 export default function RealtorsSection() {
   const [open, setOpen] = useState(false)
-  const [form, setForm] = useState({ name: '', email: '', phone: '', firm: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', firm: '', needs: '' })
   const [sending, setSending] = useState(false)
 
   useEffect(() => {
@@ -37,13 +37,14 @@ export default function RealtorsSection() {
       `Email: ${form.email}`,
       `Phone: ${form.phone}`,
       `Realty/Brokerage Firm: ${form.firm || 'N/A'}`,
+      `Listings and/or Staging Needs: ${form.needs || 'N/A'}`,
     ].join('\n')
 
     const mailtoUrl = `mailto:GiulianaDesignCo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     window.location.href = mailtoUrl
 
     toast.success('Opening your email app to send the inquiry...')
-    setForm({ name: '', email: '', phone: '', firm: '' })
+    setForm({ name: '', email: '', phone: '', firm: '', needs: '' })
     setSending(false)
   }
 
@@ -87,14 +88,11 @@ export default function RealtorsSection() {
                   Realtor Partnerships
                 </p>
                 <p className="font-sans text-muted-foreground mb-4">
-                  <span style={{ fontSize: '50px', fontWeight: '500', color: 'lab(5.25001 1.38035 2.33883)' }}>Thoughtfully Staged,   </span>
-                  <span style={{ fontSize: '50px', fontWeight: '500', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>Successfully Sold!</span>
+                  <span style={{ fontSize: '46px', fontWeight: '500', color: 'lab(5.25001 1.38035 2.33883)' }}>Thoughtfully Staged,   </span>
+                  <span style={{ fontSize: '46px', fontWeight: '500', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>Successfully Sold!</span>
                 </p>
                 <div className="w-12 h-px bg-primary mb-6" />
-                <p className="font-sans mb-6" style={{ fontSize: '25px', fontWeight: '500', color: '#000000' }}>
-                  Join our Special <span style={{ fontStyle: 'italic' }}>Realtor Loyalty Member Club</span> Program !
-                </p>
-                <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '18px', lineHeight: '1.6' }}>
+                <p className="font-sans text-sm text-muted-foreground mb-10" style={{ fontSize: '20px', fontWeight: '300', lineHeight: '1.6' }}>
                   Beautifully staged homes attract attention, photograph better, and help buyers emotionally connect from the moment they walk through the door. Your clients trust you to recommend professionals who care as much about their home as you do.
                   <div>
                     <span style={{ fontWeight: '700', fontStyle: 'italic', color: 'lab(5.25001 1.38035 2.33883)' }}>
@@ -108,10 +106,12 @@ export default function RealtorsSection() {
                     So, are you ready to elevate your next listing?
                   </div>
                 </p>
-                <p className="font-sans mb-6" style={{ fontSize: '30px', fontWeight: '500', color: '#000000' }}>
-                  Join our Special <span style={{ fontStyle: 'italic' }}>Realtor Loyalty Member Club</span> Program !
-                </p>
-                <p className="font-sans text-sm mb-10" style={{ fontSize: '17px', color: 'lab(5.25001 1.38035 2.33883)' }}>
+                <div className="border-t border-border pt-12">
+                  <p className="font-sans mb-6" style={{ fontSize: '28px', fontWeight: '300', color: '#000000' }}>
+                    Join our Special <span style={{ fontStyle: 'italic' }}>Realtor Loyalty Member Club</span> Program!
+                  </p>
+                </div>
+                <p className="font-sans text-sm mb-10" style={{ fontSize: '17px', color: 'lab(41.9561 3.51177 6.75876)' }}>
                   Sign Up Below to Learn More AND for Special Realtor Offers and Discounts
                 </p>
 
@@ -143,6 +143,13 @@ export default function RealtorsSection() {
                     value={form.firm}
                     onChange={(e) => setForm({ ...form, firm: e.target.value })}
                     className={inputClassName}
+                  />
+                  <textarea
+                    placeholder="Tell us about your Listings and/or Staging Needs"
+                    value={form.needs}
+                    onChange={(e) => setForm({ ...form, needs: e.target.value })}
+                    rows={2}
+                    className="w-full resize-none bg-transparent border-0 border-b border-border focus:border-primary rounded-none px-0 py-3 font-sans text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                   />
                   <p className="text-xs text-muted-foreground">* Required Information</p>
                   <Button
