@@ -107,7 +107,7 @@ export default function Footer() {
 
         <div className="border-t border-background/10 pt-6">
           <p className="font-sans text-xs text-background/30">
-            © {new Date().getFullYear()} Giuliana Design Co. All rights reserved.
+            © {new Date().getFullYear()} Giuliana Design Co. Inc.  All rights reserved.
           </p>
         </div>
       </div>
